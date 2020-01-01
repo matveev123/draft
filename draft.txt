@@ -1,0 +1,6158 @@
+﻿package test;
+
+
+public class HelloDate {
+	public String line = "stroka";
+
+	public static void main(String[] args) {
+		System.out.print("Inside HelloDate");
+		//NewClass testObj1 = new NewClass();
+
+	}
+}
+
+/*
+ * 
+ * 
+ * 
+ * 
+ * for (Money s : Money.values()) { System.out.print(" " + s.ordinal() + "-ый "
+ * + s); }
+ * 
+ * 
+ * coin.PENNY = 0.01; coin.NICKEL = 0.05; coin.DIME=0.1F; coin.QUARTER = 0.25F;
+ * coin.HALF_DOLLAR = 0.5f; coin.SILVER=1;
+ * 
+ * 
+ * 
+ * 
+ * TestClass[] testArr = new TestClass[] {}; testArr = new TestClass[] { new
+ * TestClass(), new TestClass("arg2"), new TestClass("arg3") };
+ * 
+ * 
+ * 
+ * int fang1, fang2; fang1 = tempMas[0] * 10 + tempMas[1]; fang2 = tempMas[2] *
+ * 10 + tempMas[3];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[1] * 10 + tempMas[0]; fang2 = tempMas[3] * 10 + tempMas[2];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[0] * 10 + tempMas[1]; fang2 = tempMas[3] * 10 + tempMas[2];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[1] * 10 + tempMas[0]; fang2 = tempMas[2] * 10 + tempMas[3];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[0] * 10 + tempMas[2]; fang2 = tempMas[1] * 10 + tempMas[3];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[0] * 10 + tempMas[2]; fang2 = tempMas[3] * 10 + tempMas[1];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[2] * 10 + tempMas[0]; fang2 = tempMas[1] * 10 + tempMas[3];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[2] * 10 + tempMas[0]; fang2 = tempMas[3] * 10 + tempMas[1];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[0] * 10 + tempMas[3]; fang2 = tempMas[1] * 10 + tempMas[2];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[0] * 10 + tempMas[3]; fang2 = tempMas[2] * 10 + tempMas[1];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[3] * 10 + tempMas[0]; fang2 = tempMas[1] * 10 + tempMas[2];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; }
+ * 
+ * fang1 = tempMas[3] * 10 + tempMas[0]; fang2 = tempMas[2] * 10 + tempMas[1];
+ * 
+ * if ((fang1 * fang2) == vampir) { System.out.println("ВАМПИР!" + vampir);
+ * return; } }
+ *
+ * 
+ * 
+ * 
+ * static void method1(char tempC) { System.out.println("symbol " + tempC +
+ * " to binary : " + Integer.toBinaryString(tempC) + " " + (int) tempC); }
+ * 
+ * static void methodForStrings(String sObj1, String sObj2) {
+ * System.out.println("sObj1 == sObj2 : " + (sObj1 == sObj2));
+ * System.out.println("sObj1 != sObj2 : " + (sObj1 != sObj2));
+ * System.out.println("equals : " + (sObj1.equals(sObj2))); }
+ * 
+ * static String method2(int numbr1, int numbr2) { if (numbr1 > numbr2) return
+ * (" over "); else if (numbr1 < numbr2) return (" under "); else return
+ * (" equal "); }
+ * 
+ * static void method3(int bound) { for (int i = 1; i <= bound; i++) for (int j
+ * = 1; j < i; j++) if (((i % j) == 0) && (j != 1)) j = i; else if (i == j + 1)
+ * System.out.print(i + " "); }
+ * 
+ * static String method4(int number, int bottomBoard, int upperBoard) { if
+ * ((number < bottomBoard) || (number > upperBoard)) return
+ * "Ошибка!Введеное число,невходит в заданный промежуток"; return
+ * "Число входит в заданный диапозон значений!";
+ * 
+ * }
+ * 
+ * static int[] method6(int fourDigit) { int tempMas[] = new int[4]; tempMas[0]
+ * = fourDigit / 1000; fourDigit = (fourDigit - ((fourDigit / 1000) * 1000));
+ * tempMas[1] = fourDigit / 100; fourDigit = (fourDigit - ((fourDigit / 100) *
+ * 100)); tempMas[2] = fourDigit / 10; fourDigit = (fourDigit - ((fourDigit /
+ * 10) * 10)); tempMas[3] = fourDigit; return tempMas; }
+ * 
+ * static void method5(int[] tempMas, int vampir) {
+ * 
+ * 
+ * class Dog { void bark() { System.out.print("woof "); }
+ * 
+ * void bark(char c) { System.out.print("woof char " + c); }
+ * 
+ * void bark(byte b) { System.out.print(" woof byte " + b); }
+ * 
+ * void bark(short s) { System.out.print(" woof short " + s); }
+ * 
+ * void bark(int i) { System.out.print(" woof int " + i); }
+ * 
+ * void bark(long l) { System.out.print(" woof long " + l); }
+ * 
+ * void bark(float f) { System.out.print(" woof float " + f); }
+ * 
+ * void bark(double d) { System.out.print(" woof double " + d); }
+ * 
+ * void testDog() { char chVal = 'z'; byte byteVal = -127; short shortVal =
+ * -111; int intVal = 0; long longVal = 11515; float floatVal = -152.22f; double
+ * doubleVal = 88999.0009d; bark(); bark(chVal); bark(byteVal); bark(shortVal);
+ * bark(intVal); bark(longVal); bark(floatVal); bark(doubleVal);
+ * 
+ * }
+ * 
+ * void info(char ch, int age) { System.out.println("сначала " + ch +
+ * " а уже потом " + age); }
+ * 
+ * void info(int age, char ch) { System.out.println("сначала " + age +
+ * " а уже потом " + ch); } }
+ * 
+ * class Cat { Cat(int i) { System.out.println("marker " + i); }
+ * 
+ * void f1(int i) { System.out.println("f(" + i + ")"); }
+ * 
+ * }
+ * 
+ * class Cats { Cat testCat2 = new Cat(2); Cat testCat1; { testCat1 = new
+ * Cat(1);
+ * 
+ * }
+ * 
+ * Cats() { System.out.println("CATS()"); } // static Cat testCat2 = new Cat(2);
+ * }
+ * 
+ * class DynamicArr { public static void main(String[] args) { for (String tempS
+ * : args) { System.out.print(tempS + " "); } } }
+ * 
+ * class TestClass { TestClass() { System.out.print("constr() "); }
+ * 
+ * TestClass(String tempStr) { System.out.print(tempStr + " "); } }
+ * 
+ * 
+ * 
+ * 
+ * 
+ * Cats.testCat1.f1(99); Cats testObj = new Cats(); int[] a1 = { 1, 2, 3, 4, 5
+ * }; int[] a2; a2 = a1; for (int i = 0; i < a2.length; i++) a2[i] = a2[i] * 2;
+ * for (int i = 0; i < a1.length; i++) System.out.print(a1[i] + " ");
+ * 
+ * // DynamicArr.main(new String[] { "arg1", "arg2", "arg3" });
+ ** 
+ * for (TestClass tempVal : testArr) { System.out.print(tempVal + " "); }
+ ** 
+ * 
+ * // TempClass testObj = new TempClass("super-puper"); // testObj.lineOpr =
+ * "lineOpr"; // System.out.print(testObj.lineKonst + " " + testObj.lineOpr); //
+ *
+ * 
+ * Dog testObj = new Dog(); // testObj.testDog(); // testObj.info('x', 0); //
+ * testObj.info(1,'Y');******* int massiv[] = new int[4];**for( int i =
+ * 1000;i<9999;i++) { massiv = method(i); method5(massiv, i);
+ * }*if(args[0]!=null) { int tempL = 0, tempR = 1, number = 0, temp = tempL +
+ * tempR; number = Integer.parseInt(args[0]); System.out.print(tempL + ", " +
+ * tempR + ", " + temp + ", "); while (number != temp) { tempL = tempR; tempR =
+ * temp; temp = tempL + tempR; System.out.print(temp + ", "); }
+ * }else*System.exit(1);
+ **/
+
+/*
+ * 
+ * int intMas[] = new int[10]; for (int i = 0; i < intMas.length; i++) {
+ * intMas[i] = i; }
+ * 
+ * for (int x : intMas) { System.out.print(x + " "); }
+ * 
+ * System.out.println();
+ * 
+ * for (int x : intMas) { switch (x) { case 1: System.out.println("1"); break;
+ * case 2: System.out.println("2"); break; case 3: System.out.println("3");
+ * break; case 8: System.out.println("8"); break; case 9:
+ * System.out.println("9"); break; case 10: System.out.println("10"); break;
+ * default: System.out.println("ti sosqa"); break; } }
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+/*
+ * 
+ * 
+ * 
+ * 
+ * System.out.println(true & true); System.out.println(true & false);
+ * System.out.println(false & true); System.out.println(false & false);
+ * 
+ * 
+ * 
+ * 
+ */
+
+/*
+ * Random objRand = new Random(100); int number = objRand.nextInt(100); for (;;)
+ * { System.out.println("rand number " + number + method(number, (number =
+ * objRand.nextInt(100))) + number); }
+ */
+//System.out.println(Character.digit('k', 2));      && || ! < > <= >= != == equals
+
+/*
+ * method('A'); method('a'); method('Z'); method('z'); method('5'); method('.');
+ * method('&'); method('#'); method('?'); method('@'); method('ё'); method('Ё');
+ */
+
+// System.out.println(Character.MIN_RADIX + " " + Character.MAX_RADIX);
+
+/*
+ * int intVar = -1;
+ * 
+ * System.out.println(" origin : " + Integer.toBinaryString(intVar)); for (int i
+ * = 0; i < 31; i++) { System.out.println("    <<= : " +
+ * Integer.toBinaryString(intVar <<= 1)); } for (int i = 0; i < 31; i++) {
+ * System.out.println("    >>> : " + Integer.toBinaryString(intVar >>>= 1)); }
+ */
+
+// int secondVar = 0x0af1;
+/*
+ * objStream.println((firstVar & secondVar));
+ * objStream.println(Integer.toBinaryString(firstVar | secondVar));
+ * objStream.println(Integer.toBinaryString(firstVar ^ secondVar));
+ */
+
+/*
+ * method(true); float varF = Float.MAX_VALUE; double varD = Double.MAX_VALUE;
+ * 
+ * objStream.println(varF + " " + Float.floatToIntBits(varF));
+ * objStream.println(varD + " " + Double.doubleToLongBits(varD));
+ */
+
+/*
+ * int testInt = 0X11; objStream.println(Integer.valueOf(testInt)); long
+ * testLongX16 = 0x2fl; objStream.println(Long.toBinaryString(testLongX16));
+ * long testLongX8 = 021l; objStream.println(Long.toBinaryString(testLongX8));
+ */
+
+/*
+ * Random rand = new Random(); OutputCoin.method(rand.nextBoolean());
+ * OutputCoin.method(rand.nextBoolean()); OutputCoin.method(rand.nextBoolean());
+ * OutputCoin.method(rand.nextBoolean());
+ */
+
+// DateForFirstDrill tempObject = new DateForFirstDrill();
+// Random rand = new Random(44);
+
+/*
+ * Dog spot = new Dog(); Dog scruffy = new Dog(); spot.name = "spot"; spot.says
+ * = "ugh!"; scruffy.name = "scruffy"; scruffy.says = "fuck that!";
+ */
+
+/*
+ * Random rand = new Random(44); Data obj1 = new Data(); Short varShort = new
+ * Short((short) 1); int varIntValue = rand.nextInt(100) + 1; int testInt = 10;
+ */
+
+// System.out.println("Интежер "+tempObject.testInteger);
+// System.out.println("Чар "+tempObject.testChar);
+// СlassForMethod tempObjectForClass = new СlassForMethod();
+
+// String lineForClass = "stroka";
+
+/*
+ * objStream.println(spot.name + " says " + spot.says + " and " + scruffy.name +
+ * " says " + scruffy.says); Dog anotherDog = new Dog(); spot = anotherDog;
+ * objStream.println("== : " + (spot == anotherDog) + " " + spot + anotherDog);
+ * objStream.println("equals : " + (spot.equals(anotherDog)) + " " + spot +
+ * anotherDog);
+ */
+
+/*
+ * objStream.println(lineForClass); objStream.println("Скорость равна " +
+ * obj1.calc() + " км/ч"); objStream.println("short : " + varIntValue +
+ * "; varShort : " + varShort); testInt = testInt++ * testInt;
+ * objStream.println(testInt);
+ */
+
+// System.out.println("Строка занимает " +
+// tempObjectForClass.storage(lineForClass) + " байт");
+
+/*
+ * Integer temp = new Integer(100); Character ch = new Character('a');
+ * objStream.print(temp); objStream.print(ch);
+ */
+
+/*
+ * TestClass firstObj = new TestClass(); TestClass secondObj = new TestClass();
+ * TestClass thirdObj = new TestClass();
+ */
+
+/*
+ * TestClass.generalInt = 777; firstObj.generalInt = 100;
+ * System.out.println(TestClass.generalInt); secondObj.generalInt= 200;
+ * System.out.println(TestClass.generalInt); thirdObj.generalInt = 300;
+ * System.out.println(TestClass.generalInt); TestClass.generalInt = 777;
+ * System.out.println(TestClass.generalInt);
+ */
+
+/*
+ * System.out.println(); System.out.println(new Date());
+ * System.getProperties().list(System.out);
+ * System.out.println(System.getProperties());
+ * System.out.println(System.getProperty("user.name"));
+ * System.out.println(System.getProperty("java.library.path"));
+ */
+
+ 
+ LITTLEHELPLITTLEHELPLITTLEHELPLITTLEHELPLITTLEHELPLITTLEHELPLITTLEHELPLITTLEHELPLITTLEHELPLITTLEHELPLITTLEHELPLITTLEHELPLITTLEHELP
+ 
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ 
+ 
+ 
+ // interfaces/Cycles.java
+// TIJ4 Chapter Interfaces, Exercise 18, page 342
+/* Create a Cycle interface, with implementations Unicycle, Bicycle and 
+* Tricycle. Create factories for each type of Cycle, and code that uses
+* these factories.
+*/
+
+import static org.greggordon.tools.Print.*;
+
+interface Cycle {
+	void ride();
+}
+
+interface CycleFactory {
+	Cycle getCycle();
+}
+
+class Unicycle implements Cycle {
+	public void ride() { println("Ride Unicycle"); }
+}
+
+class UnicycleFactory implements CycleFactory {
+	public Cycle getCycle() {
+		return new Unicycle();
+	}
+}
+
+class Bicycle implements Cycle {
+	public void ride() { println("Ride Bicycle"); }
+}
+
+class BicycleFactory implements CycleFactory {
+	public Cycle getCycle() {
+		return new Bicycle();
+	}
+}
+
+
+class Tricycle implements Cycle {
+	Tricycle() { println("Tricycle()"); }
+	public void ride() { println("Ride Tricycle"); }
+}
+
+class TricycleFactory implements CycleFactory {
+	public Cycle getCycle() {
+		return new Tricycle();
+	}
+}
+
+public class Cycles {
+	public static void rideCycle(CycleFactory factory) {
+		Cycle c = factory.getCycle();
+		c.ride();
+	}
+	public static void main(String [] args) {
+		rideCycle(new UnicycleFactory());
+		rideCycle(new BicycleFactory());
+		rideCycle(new TricycleFactory());	
+	}
+}
+1
+Downloading1
+
+
+
+
+ФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАФАБРИКАМ
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+package testProject;
+
+import java.nio.*;
+import java.util.*;
+
+interface Cycle {
+	void ride();
+}
+
+interface CycleFactory {
+	Cycle GetCycle();
+}
+
+class Unicycle implements Cycle {
+	public void ride() {
+		Test.print("Unicycle");
+	}
+}
+
+class UnicycleFactory implements CycleFactory {
+	public Cycle GetCycle() {
+		return new Unicycle();
+	}
+}
+
+class Bicycle implements Cycle {
+	public void ride() {
+		Test.print("Bicycle");
+	}
+}
+
+class BicycleFactory implements CycleFactory {
+	public Cycle GetCycle() {
+		return new Bicycle();
+	}
+}
+
+class Tricycle implements Cycle {
+// Tricycle() {}
+	public void ride() {
+		Test.print("Tricycle");
+	}
+}
+
+class TricycleFactory implements CycleFactory {
+
+	public Cycle GetCycle() {
+		return new Tricycle();
+	}
+}
+
+public class Test {
+	static void rideCycle(CycleFactory factory) {
+		Cycle c = factory.GetCycle();
+		c.ride();// создание обьекта,реализующего интерфейс
+	}
+
+	public static void main(String[] args) {
+
+		rideCycle(new UnicycleFactory());// здесь все обьекты,которые реализуют интерфейс(ride();,аждый свой)
+		rideCycle(new BicycleFactory());
+		rideCycle(new TricycleFactory());
+
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+package testProject;
+
+import java.nio.*;
+import java.util.*;
+
+interface Coin {
+	void toss();
+}
+
+interface Cube {
+	void dice();
+}
+
+interface CoinFactory {
+	Coin GetCoin();
+}
+
+interface CubeFactory {
+	Cube GetCube();
+}
+
+class CoinGame implements Coin {// реализция интерфейса
+	public void toss() {
+		Random rand = new Random();
+
+		Test.print((rand.nextBoolean()) ? "tail" : "eagle");
+	};
+}
+
+class CubeGame implements Cube {
+	public void dice() { // реализция интерфейса
+		Random rand = new Random();
+		switch (rand.nextInt(5)) {
+		case 0:
+			Test.print("dropped 1 point");
+			break;
+		case 1:
+			Test.print("dropped 2 point");
+			break;
+		case 2:
+			Test.print("dropped 3 point");
+			break;
+		case 3:
+			Test.print("dropped 4 point");
+			break;
+		case 4:
+			Test.print("dropped 5 point");
+			break;
+		}
+
+	};
+}
+
+class CoinGameFactory implements CoinFactory {
+	public Coin GetCoin() {
+		return new CoinGame();
+	}
+}
+
+class CubeGameFactory implements CubeFactory {
+	public Cube GetCube() {
+		return new CubeGame();
+	}
+}
+
+public class Test {
+
+	static void rideCoin(CoinFactory factoryCoin) {
+		Coin objGameCoin = factoryCoin.GetCoin();// objGameCoin - тот смый обьект(важно!)
+		objGameCoin.toss();
+	}
+
+	static void rideCube(CubeFactory factoryCube) {
+		Cube objGameCube = factoryCube.GetCube(); // objGameCube - тот самый обьект(важно!)
+		objGameCube.dice();
+	}
+
+	public static void main(String[] args) {
+		// rideCoin(new CoinGameFactory());
+		// rideCube(new CubeGameFactory());
+
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class Outer1 {
+
+	class Inner { 
+		Inner() 
+		{ System.out.println("Inner()"); }
+	}
+	
+	Outer1() 
+	{ System.out.println("Outer1()"); }
+	// make an Inner from within a non-static method of outer class:
+	
+	Inner makeInner() {
+		return new Inner();
+	}
+	
+	public static void main(String[] args) {
+		Outer1 o = new Outer1();
+		Inner i = o.makeInner();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ9ЗАДАНИЕ-СТАРННОЕ
+
+
+
+interface Interface {
+	void method();
+}
+
+public class Outter {
+	public Interface methodInner(boolean b) {
+		if (b) {
+			class Inner implements Interface {
+				public void method() {
+
+				}
+			}
+			return new Inner();
+		}
+		return null;// !!
+	}
+
+	public static void main(String[] args) {
+		Outter obj = new Outter();
+	}
+
+}
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+class TempClass {
+
+	public static Set<Character> vowell = new HashSet<Character>(
+			Arrays.asList('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u'));
+
+	public int search(String str) {
+		int countWordsVowell = 0;
+		int i = 0;
+
+		while (i != str.length()) {
+			if (vowell.contains(str.charAt(i++)))
+				countWordsVowell++;
+		}
+		return countWordsVowell;
+	}
+}
+
+public class ListFeatures {
+	public static void main(String[] args) {
+		TempClass tempObject = new TempClass();
+		List<String> words = new ArrayList<String>();// String.CASE_INSENSITIVE_ORDER - это компоратор
+
+		words.addAll(new TextFile("D:\\eclipse\\workspace\\testProject\\src\\testProject\\JavaProg.java", "\\W+"));//
+		int result = 0;
+		for (String temp : words) {
+			result += tempObject.search(temp);
+		}
+		print(result);
+	}
+
+}
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ package testProject;
+
+import static testProject.Test.*;
+
+import java.util.Random;
+
+class ConectionManager {
+	private static int i = 0;
+	private static Connection[] connectionMas = new Connection[5];
+
+	public static Connection giveMeConnection() {
+
+		if (i <= 4) {
+			connectionMas[i] = new Connection();
+			print("передан " + i + "-ый обьект в массиве с весом:" + connectionMas[i].weight);
+			return connectionMas[i++];
+		} else {
+			print("массив закончился!");
+			return null;
+		}
+
+	}
+
+}
+
+class Connection {
+	int weight = 0;
+
+	Connection() {
+		Random rand = new Random(System.nanoTime());// currentTimeMillis()
+		this.weight = rand.nextInt(1000);
+
+	}
+
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+package testProject;
+
+
+
+public class Test {
+
+	public static void main(String args[]) {
+		Connection[] tempMas = new Connection[5];
+		for (int i = 0; i < tempMas.length; i++)
+			tempMas[i] = ConectionManager.giveMeConnection();
+
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+package testProject;
+
+import static testProject.Test.*;
+
+class Test2 {
+	private String line;
+
+	Test2() {
+		print("Test2");
+		line = "Constructed";
+	}
+
+	public String toString() { 
+		return line;
+	}
+}
+
+class Test3 {
+
+	private String line1, line2 = "2-я строка", line3 = "3-я строка", line4; // нициализация в точке определения
+	private int i;
+	private float toy;
+	Test2 castille;
+
+	Test3() {
+		line1 = "1-ая строка"; // инициализация в конструкторе
+
+		toy = 10517f;
+		castille = new Test2();
+	}
+
+	{ // инициализация экземпляра
+		i = 99;
+	}
+
+	public String toString() { 
+		if (line4 == null) // отложенная нициализация
+			line4 = "4-я строка";
+		return "line1 = " + line1 + " line2 = " + line2 + " line3 = " + line3 + " line4 = " + "\ni = " + i + " toy = "
+				+ toy + " castille " + castille;
+	}
+}
+
+
+
+
+
+
+public static void main(String args[]) {
+		Test3 testObj = new Test3();
+		print(testObj);
+	}
+
+	
+	
+	
+	
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+package testProject;
+
+class Test4 {
+	
+
+	public String toString() {
+		Test testObj = new Test();
+		testObj.f = 14142f;
+		testObj.i = 990;
+		testObj.line = "line";
+
+		return "f = " + testObj.f + " i = " + testObj.i + " line = " + testObj.line + " testObj = " + testObj;
+	}
+}
+    
+	
+	
+	
+	
+	
+	
+
+package testProject;
+
+public class Test {
+	String line;
+	int i;
+	float f;
+
+	public static void main(String args[]) {
+		print(new Test4());
+
+	}
+
+	public String toString() {
+		return "pidr";
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+package testProject;
+
+public class Test {
+	private String a = " Test ";
+
+	public String append(String s) {
+		return s += a;
+	}
+
+	public String apply() {
+		return append("apply ");
+	}
+
+	public String dilute() {
+		return append("dilute ");
+	}
+
+	public String scrub() {
+		return append("scrub ");
+	}
+
+	public String toString() {
+		return "pidr Test ";
+	}
+
+	public static void main(String args[]) {
+		Test testObject = new Test();
+		print(testObject.apply());
+		print(testObject.dilute());
+		print(testObject.scrub());
+		print(testObject);
+		print();
+		Other.main(args);
+		print("КАНЕЦ ПОЛНЫЙ");
+
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+}
+
+class Other extends Test {
+	private String a = " Other ";
+
+	public String append(String s) {
+		return s += a;
+	}
+
+	public String scrub() {
+		printnb("super.scrub() : ");
+
+		return super.scrub();
+
+	}
+
+	public String foam() {
+		return append("foam ");
+	}
+
+	public String toString() {
+		return "pidr Other";
+	}
+
+	public static void main(String args[]) {
+		Other testOtherObject = new Other();
+		print(testOtherObject.apply());
+		print(testOtherObject.dilute());
+		print(testOtherObject.scrub());
+		print(testOtherObject.foam());
+		print(testOtherObject);
+		print("КАНЕЦ");
+	}
+
+}
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+package testProject;
+
+class Component {
+
+	Component(int i) {
+		Test.print("Construktor Component");
+	}
+
+	public String toString() {
+		return "titka";
+	}
+}
+
+class Root extends Component {
+
+	Root(int i) {
+		super(i);
+		Component component1 = new Component(i);
+		Component component2 = new Component(i);
+		Component component3 = new Component(i);
+		Test.print("constructor  Root with examples : " + component1 + " " + component2 + " " + component3);
+	}
+
+}
+
+class Stem extends Root {
+	Stem(int i) {
+		super(i);
+		Test.print("constructor Stem "); // + component1 + " " + component2 + " " + component3
+
+	}
+
+}
+
+public class Test {
+
+	public static void main(String args[]) {
+		Stem testObj = new Stem(500);
+
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+
+}
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+package testProject;
+
+import java.util.*;
+
+class Value {
+	int i;
+
+	public Value(int i) {
+		this.i = i;
+	}
+
+}
+
+public class Test {
+	private static Random rand = new Random(55);
+	private String id;
+
+	public Test(String id) {
+		this.id = id;
+	}
+
+//
+	private int int1 = 100; // константа времени компиляции
+	private static int INT_1 = 100; // значение в единственном экземпляре + иницилиаризируется один раз!
+//
+	private static final int VALUE_FINAL_INT = 1000;// true const
+//
+	private final int int2 = rand.nextInt(22); // ?????
+	private static final int INT_2 = rand.nextInt(33);
+
+//
+	private Value v1 = new Value(99);
+	private final Value v2 = new Value(101);// ссылку нельзя изменить
+	private static final Value VAL_FINAL = new Value(102); // true const
+//
+	private final int[] intMas = new int[] { 555, 666, 777 };// ссылку нельзя изменить
+
+// 
+	public String toString() {
+		return this.id + " " + this.int2 + " " + this.INT_2;
+	}
+
+	public static void main(String args[]) {
+
+		Test bitchObj = new Test("id bitch!");
+		Test guyObj = new Test("id guy");
+		//
+		// !bitchObj.intMas=new int[5];
+		// !bitchObj.v2=new Value(1);
+		//
+		print(bitchObj);
+		print(guyObj);
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+}
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+package testProject;
+
+import java.util.*;
+
+class FirstClass {
+	final void method() {
+		Test.print("darowa");
+	}
+}
+
+/*
+ * class TwoClass extends FirstClass {
+ * 
+ * @Override final void method() { Test.print("darowa123"); } }
+ */
+
+class ZeroClass {
+	private void method1() { // + final
+		Test.print("ZeroClass method1");
+	}
+
+	private void method2() { // private*!!! final not used!
+		Test.print("ZeroClass method2");
+	}
+}
+
+class OverrideClass1 extends ZeroClass {
+
+	private final void method1() {
+		Test.print("OverrideClass1 method1");
+	}
+
+	private void method2() { // private*!!! final not used!
+		Test.print("OverrideClass1 method2");
+	}
+}
+
+class OverrideClass2 extends OverrideClass1 {
+	public final void method1() {
+
+		Test.print("OverrideClass2 method1");
+	}
+
+	public void method2() {
+		Test.print("OverrideClass2 method2");
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		/*
+		 * final Value tempObj = new Value(); final Value otherObj = new Value(9999);
+		 * print(tempObj); print(otherObj); tempObj = otherObj;
+		 */
+
+		OverrideClass2 obj2 = new OverrideClass2();
+		obj2.method1();
+		obj2.method2();
+		// можно провести восходящее преобразование
+		OverrideClass1 obj1 = obj2;
+		// !obj1
+		// !obj1
+		// Еще одно преобразование:
+		ZeroClass zeroObj = obj2;
+		// ! zeroObj
+		// ! zeroObj
+
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+}
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+package testProject;
+
+enum Note {
+	MIDDLE_C, C_SHARP, B_FLAT;
+}
+
+class Instrument {
+	public void play(Note n) {
+		Music.print("asdasd");
+	}
+}
+
+class Unicycle extends Instrument { // !!
+
+	public void play(Note n) {
+		Music.print("Unicycle.play" + n);
+	}
+}
+
+class Bicycle extends Instrument {
+
+	public void play(Note n) {
+		Music.print("Bicycle.play" + n);
+	}
+}
+
+class Tricycle extends Instrument {
+	public void play(Note n) {
+		Music.print("Tricycle .play" + n);
+	}
+}
+
+public class Music {
+
+	public static void ride(Instrument i) { // instrument in args
+		i.play(Note.B_FLAT);
+	}
+
+	public static void main(String[] args) {
+		// Wind flute = new Wind();
+		// tune(flute);// восходящее преобразовани( сужает интерфейс Instrument)
+		// Cycle cycleObj = new Cycle();
+		Unicycle uniObj = new Unicycle();
+		Bicycle biObj = new Bicycle();
+		Tricycle triObj = new Tricycle();
+
+		ride(uniObj);
+		ride(biObj);
+		ride(triObj);
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+}
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+package polymorphism;
+
+import static testProject.Test.*;
+//import polymorphism.shape.*;
+//private static RandomShapeGenerator gen = new RandomShapeGenerator(); //
+// private
+
+/*
+ * Shape[] masShape = new Shape[9]; Shape objShape = new Shape(); for (int i =
+ * 0; i < masShape.length; i++) masShape[i] = gen.next();
+ */
+
+//полиморфные вызовы методов
+/*
+ * for (Shape temp : masShape) temp.draw(); objShape.draw();
+ */
+class Shapes1 {
+	public static String get() {
+		return "basic staticGet()";
+	}
+
+	public String dynGet() {
+		return "basic dynGet()";
+	}
+}
+
+class SuperShapes extends Shapes1 {
+	public static String get() {
+		return "super staticGet()";
+	}
+
+	public String dynGet() {
+		return "super dynGet()";
+	}
+
+}
+
+public class Shapes {
+	public static void main(String[] args) {
+		Shapes1 objShape = new SuperShapes();
+//    Shapes1 objShape = new SuperShapes(); восходящее преобразование ; полиформфизм
+		print(objShape.get());
+		print(objShape.dynGet());
+	}
+}
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+package polymorphism;
+
+import static testProject.Test.*;
+
+class Meal {
+	Meal() {
+		print("constr. Meal");
+	}
+}
+
+class Bread {
+	Bread() {
+		print("constr. Bread");
+	}
+}
+
+class Lattuce {
+	Lattuce() {
+		print("constr. Lattuce");
+	}
+}
+
+class Cheese {
+	Cheese() {
+		print("constr Cheese");
+	}
+}
+
+class Lunch extends Meal {
+	Lunch() {
+		print("constr. Lunch");
+	}
+}
+
+class PortableLunch extends Lunch {
+	PortableLunch() {
+
+		print("constr. PortableLunch");
+
+	}
+}
+
+public class Shapes extends PortableLunch {
+	Bread b = new Bread(); // по очеереди
+	Cheese c = new Cheese();
+	// Lattuce l = new Lattuce();
+
+	Shapes() {
+		print("кушать подано-садитесь жрать ,пожалуйста");
+	}
+
+	public static void main(String[] args) {
+		new Shapes();
+	}
+}
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+ЧУХНЯ ЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯЧУХНЯ
+
+
+
+package polymorphism;
+
+import static testProject.Test.*;
+
+class TempCh {
+	TempCh() {
+		print("создали TempCh");
+	}
+
+	protected void dispose() {
+		print("завершаем TempCh" + this);
+	}
+}
+
+class TempDesc {
+	TempDesc() {
+		print("создали TempDesc");
+	}
+
+	protected void dispose() {
+		print("завершаем TempDesc");
+	}
+}
+
+class Characteristic extends TempCh {
+	private String ch;
+
+	protected TempCh tempObjC = new TempCh(); // private???
+
+	Characteristic(String ch) {
+		this.ch = ch;
+		print("создаём characterictic" + ch);
+	}
+
+	protected void dispose() {
+		print("завершаем characterictic" + this.ch);
+	}
+}
+
+class Desription extends TempDesc {
+	private String d;
+	protected TempDesc tempObjD = new TempDesc(); // private???
+
+	Desription(String d) {
+		this.d = d;
+		print("создаём Desription" + d);
+	}
+
+	protected void dispose() {
+		print("завершаем Desription" + this.d);
+	}
+}
+
+class LivingCreature {
+	private Characteristic cObj = new Characteristic("ch1");
+	private Desription dObj = new Desription("d1");
+
+	LivingCreature() {
+
+		print("создаём LivingCreature");
+	}
+
+	protected void dispose() {
+		print("dispose in LivingCreature");
+
+		dObj.tempObjD.dispose();
+		cObj.tempObjC.dispose();
+
+		dObj.dispose();
+		cObj.dispose();
+	}
+}
+
+class Animal extends LivingCreature {
+	private Characteristic cObj = new Characteristic("animal1");
+	private Desription dObj = new Desription("animal2");
+
+	Animal() {
+
+		print("создаём animal");
+	}
+
+	protected void dispose() {
+		print("dispose in animal");
+		dObj.dispose();
+		cObj.dispose();
+		super.dispose();
+	}
+}
+
+class Amphibian extends Animal {
+
+	private int refCount = 0;
+	private static long counter = 0;
+	private final long id = counter;
+
+	private Characteristic cObj = new Characteristic("Amphibian1");
+	private Desription dObj = new Desription("Amphibian2");
+
+	Amphibian() {
+
+		print("создаём Amphibian");
+	}
+
+	protected void dispose() {
+
+		if (--refCount == 0) {
+			print("dispose" + this);
+
+		}
+		print("dispose in Amphibian");
+		dObj.dispose();
+		cObj.dispose();
+		super.dispose();
+	}
+}
+
+public class Frog extends Amphibian {
+	private Amphibian amph;
+	private static long counter = 0;
+	private final long id = counter;
+
+	private Characteristic cObj = new Characteristic("Frog1");
+	private Desription dObj = new Desription("Frog2");
+
+	private Characteristic tempObj1 = new Characteristic("FrogTemp1");
+	private Desription tempObj2 = new Desription("FrogTemp2");
+
+	Frog() {
+
+		print("создаём Frog");
+		// method++
+		// this.amph=
+		// super(.);
+
+	}
+
+	protected void dispose() {
+		print("dispose in Frog");
+		dObj.dispose();
+		cObj.dispose();
+
+		tempObj1.dispose();
+		tempObj2.dispose();
+
+		super.dispose();
+	}
+
+	public static void main(String[] args) {
+
+		// Frog frog = new Frog();
+
+		Frog[] masFrog = { new Frog(), new Frog(), new Frog() };
+		for (Frog temp : masFrog)
+			temp.dispose();
+		print("Канец!");
+
+	}
+}
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+package testProject;
+
+import java.util.Random;
+
+interface InterfaceOne {
+	void InterfaceOneMethod();
+
+}
+
+/*
+ * interface InterfaceTwo { void InterfaceTwoMethod1();
+ * 
+ * }
+ * 
+ * interface InterfaceTree { void InterfaceTreeMethod1();
+ * 
+ * }
+ * 
+ * interface GeneralInterFace extends InterfaceOne, InterfaceTwo, InterfaceTree
+ * { void generalMethod0(); }
+ */
+
+class Temp {
+
+	public void InterfaceOneMethod() { // mb static??
+		Test.print("0");// InterfaceOneMethod
+	}
+
+	public void next() {
+		Random rand = new Random(44);
+		switch (rand.nextInt(3)) {
+		case 0:
+			InterfaceOneMethod();
+		default:
+		}
+	}
+}
+
+///// Test должен являтьс производным от классса и Test должен реализовывать все методы
+
+public class Test {
+	public static void main(String[] args) {
+		Test testObj = new Test();// этот объект нужно передать кажлому из методов!
+		Temp tempObj = new Temp();
+		tempObj.next();
+		tempObj.next();
+		tempObj.next();
+		Test.print("draarows");
+
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+ХОРОШИЙ ПРИМЕР!ХОРОШИЙ ПРИМЕР!ХОРОШИЙ ПРИМЕР!ХОРОШИЙ ПРИМЕР!ХОРОШИЙ ПРИМЕР!ХОРОШИЙ ПРИМЕР!ХОРОШИЙ ПРИМЕР!ХОРОШИЙ ПРИМЕР!ХОРОШИЙ ПРИМЕР!ХОРОШИЙ ПРИМЕР!ХОРОШИЙ ПРИМЕР!
+
+
+
+package testProject;
+
+interface Interface1 {
+	void b();
+
+	void c();
+}
+
+interface Interface2 {
+	void d();
+
+	void f();
+}
+
+interface Interface3 {
+	void h();
+
+	void j();
+}
+
+interface GeneralInterface extends Interface1, Interface2, Interface3 {
+	void z();
+}
+
+abstract class AbstractClass {
+	abstract void abstractMethod(); // must override abstract method!
+}
+
+class TempClass extends AbstractClass implements GeneralInterface { // РЕАЛИЗАЦИЯ ИНТЕРФЕЙСОВ!
+	public void b() {
+		// some Code
+	};
+
+	public void c() {
+		// some Code
+	};
+
+	public void d() {
+		// some Code
+	};
+
+	public void f() {
+		// some Code
+	};
+
+	public void h() {
+		// some Code
+	};
+
+	public void j() {
+		// some Code
+	};
+
+	public void z() {
+		// some Code
+	};
+
+	public void abstractMethod() {
+		Test.print("Override abstractMethod");
+	};
+}
+
+public class Test {
+
+	public static void m1(Interface1 i1) {
+		i1.b();
+	};
+
+	public static void m2(Interface2 i2) {
+		i2.d();
+	};
+
+	public static void m3(Interface3 i3) {
+		i3.h();
+	}
+
+	public static void m4(GeneralInterface i4) {
+		i4.z();
+	};
+
+	public static void m5(AbstractClass i5) {
+		i5.abstractMethod();
+	};
+
+	public static void main(String[] args) {
+		TempClass tempObj = new TempClass();
+		m1(tempObj);
+		m2(tempObj);
+		m3(tempObj);
+		m4(tempObj);
+		m5(tempObj);
+		Test.print("draarows");
+
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+package testProject;
+
+import java.nio.*;
+import java.util.*;
+
+class TempClass {
+	private static Random rand = new Random();
+
+	public static char next() {
+		return (char) rand.nextInt(128);// от 0 до 127
+	}
+
+	public static void method() {
+		for (int i = 0; i < 10; i++)
+			Test.print(TempClass.next());
+	}
+}
+
+public class Test extends TempClass implements Readable {
+
+	private int count;
+
+	public Test(int count) {
+		this.count = count;
+	}
+
+	public int read(CharBuffer ch) {
+
+		if (--count == 0)
+			return -1;
+		String result = Character.toString(next());
+		ch.append(result);
+		return result.length();
+	}
+
+	public static void main(String[] args) {
+		Scanner sObj = new Scanner(new Test(3));
+
+		while (sObj.hasNext()) {
+			Test.print(sObj.next());
+		}
+
+	}
+
+	public static void print(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void print() {
+		System.out.println();
+	}
+
+	public static void printnb(Object obj) {
+		System.out.print(obj);
+	}
+
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+package testProject;
+
+import static PrintText.Matveev.Print.*;
+
+import PrintText.Matveev.Print;
+
+interface Selector {
+	boolean end();
+
+	Object current();
+
+	void next();
+
+	String getLine();
+
+	boolean end2();
+}
+
+public class Sequence { // внешний
+
+	private Object[] items;
+	private int next = 0;
+
+	private String[] lineMas;
+
+	public Sequence(int size) {
+		items = new Object[size];
+		lineMas = new String[size];
+	}
+
+	public Sequence(String... args) {
+		lineMas = args;
+		items = new Object[0];
+	}
+
+	public void add(Object x) {
+		if (next < items.length)
+			items[next++] = x; // следующий
+
+	}
+
+	private class SequenceSelector implements Selector { // внутрений
+		private int i = 0;
+		private int counter = 0;
+
+		// items(внешний)
+
+		public boolean end() {
+			return i == items.length;
+		}
+
+		public Object current() {
+			return items[i];
+		}
+
+		public void next() {
+			if (i < items.length)
+				i++;
+		}
+
+		public String getLine() {
+			if (counter < lineMas.length)
+				return lineMas[counter++];
+			else
+				return null;
+		}
+
+		public boolean end2() {
+			return counter == lineMas.length;
+		}
+
+	}
+
+	public Selector getSequece() {
+		return new SequenceSelector();// внутрений
+	}
+
+	public static void main(String[] args) {
+
+		Sequence test = new Sequence(10);
+		Sequence test2 = new Sequence("000", "111", "333");
+		//
+		for (int i = 0; i < 10; i++)
+			test.add(Integer.toString(i)); // заполнили test
+		//
+
+		//
+		Selector selector = test.getSequece();
+		//
+
+		//
+		Selector selector2 = test2.getSequece();
+		//
+		Print.print("test: ");
+		while (!(selector.end())) {
+			Print.print(selector.current() + " ");
+			selector.next();// счётчик
+		}
+
+		Print.print("\ntest2:");
+		while (!(selector2.end2())) 
+			Print.print(selector2.getLine() + " ");
+		}
+
+	}
+
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+ХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕР
+interface Interface {
+	void method();
+}
+
+public class Outter {
+	private Interface generalMethod() {
+		return new Interface() {/// upcast
+
+			public void method() {
+
+			}
+		};
+
+	}
+
+	public static void main(String[] args) {
+		Outter obj = new Outter();
+		obj.generalMethod().method();
+}
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+interface Monster {
+	void menace();
+}
+
+interface DangerousMonster extends Monster {
+	void destroy();
+}
+
+interface Lethal {
+	void kill();
+}
+
+interface Vampire extends DangerousMonster, Lethal { // dangerous + lethal
+	void drinkBlood();
+}
+
+public class HorrorShow {
+////DragonZilla implements DangerousMonster 
+	DangerousMonster methodD() {// methodD
+		return new DangerousMonster() {
+
+			public void menace() {
+			};
+
+			public void destroy() {
+			};
+		};
+	}
+
+////Vampire implements Vampire 
+	Vampire methodV() {// methodV
+		return new Vampire() {
+			public void menace() {
+			};
+
+			public void destroy() {
+			};
+
+			public void kill() {
+			};
+
+			public void drinkBlood() {
+			};
+		};
+	}
+
+	static void u(Monster b) {
+		b.menace();
+	}
+
+	static void v(DangerousMonster d) {
+		d.menace();
+		d.destroy();
+	}
+
+	static void w(Lethal l) {
+		l.kill();
+	}
+
+	public static void main(String[] args) {
+
+		HorrorShow DragonZilla = new HorrorShow();
+		DragonZilla.methodD().destroy();
+		// HorrorShow.v(DragonZilla.methodD());
+		DragonZilla.methodD().menace();
+
+		HorrorShow Vampire = new HorrorShow();
+		Vampire.methodV().menace();
+		Vampire.methodV().destroy();
+		Vampire.methodV().drinkBlood();
+		Vampire.methodV().kill();
+
+	}
+}
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+Хороший примерХороший примерХороший примерХороший примерХороший примерХороший примерХороший примерХороший примерХороший пример
+
+
+
+
+
+
+class Inner {// конструктор должен получать аргументы
+//!abstract 
+	public Inner(int i) {
+	}
+}
+
+public class Outter {
+//!extends Inner 
+	public static Inner getBase(int i) {// нужный нам метод
+		return new Inner(i) {// передача аргумент конструктору
+		};
+	}
+
+	public static void main(String[] args) {
+		Inner obj = getBase(100);
+	}
+}
+
+
+/*{
+Print.print("В инициализаторе экземпляра");
+}
+
+public void f() {
+Print.print("В анонимном (классе)/методе f()");
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+ХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕР
+
+
+package testProject;
+
+import java.util.*;
+
+import PrintText.Matveev.Print;
+
+interface Coin {
+	void toss();
+}
+
+interface Cube {
+	void dice();
+}
+
+interface CoinFactory {
+	Coin GetCoin();
+}
+
+interface CubeFactory {
+	Cube GetCube();
+}
+
+class CoinGame implements Coin {
+	public void toss() {
+		Random rand = new Random();
+
+		Print.print((rand.nextBoolean()) ? "tail" : "eagle");
+	};
+
+	public static CoinFactory factory = new CoinFactory() {
+		public Coin GetCoin() {
+			return new CoinGame();
+		}
+	};
+}
+
+class CubeGame implements Cube {
+	public void dice() {
+		Random rand = new Random();
+		switch (rand.nextInt(5)) {
+		case 0:
+			Print.print("dropped 1 point");
+			break;
+		case 1:
+			Print.print("dropped 2 point");
+			break;
+		case 2:
+			Print.print("dropped 3 point");
+			break;
+		case 3:
+			Print.print("dropped 4 point");
+			break;
+		case 4:
+			Print.print("dropped 5 point");
+			break;
+		}
+
+	};
+
+	public static CubeFactory factory = new CubeFactory() {
+		public Cube GetCube() {
+			return new CubeGame();
+		}
+	};
+
+}
+
+public class Outter {
+
+	public static void playGameCoin(CoinFactory factory) {
+		Coin c = factory.GetCoin();
+		c.toss();
+
+	}
+
+	public static void playGameCube(CubeFactory factory) {
+		Cube c = factory.GetCube();
+		c.dice();
+
+	}
+
+	public static void main(String[] args) {
+		playGameCoin(CoinGame.factory);
+		playGameCube(CubeGame.factory);
+
+		// rideCoin(new CoinGameFactory());
+		// rideCube(new CubeGameFactory());
+
+		/*
+		 * class CoinGameFactory implements CoinFactory { public Coin GetCoin() { return
+		 * new CoinGame(); } }
+		 * 
+		 * class CubeGameFactory implements CubeFactory { public Cube GetCube() { return
+		 * new CubeGame(); } }
+		 * 
+		 * 
+		 * static void rideCoin(CoinFactory factoryCoin) { Coin objGameCoin =
+		 * factoryCoin.GetCoin(); objGameCoin.toss(); }
+		 * 
+		 * static void rideCube(CubeFactory factoryCube) { Cube objGameCube =
+		 * factoryCube.GetCube(); objGameCube.dice(); }
+		 */
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+ХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕР
+
+
+
+
+interface Interface {
+	void method1();
+
+	void method2();
+
+	static class Inner {
+		static void generalMethod(Interface in) {
+			in.method1();
+			in.method2();
+		}
+
+	}
+}
+
+public class Outter implements Interface {
+	public void method1() {
+		Print.print("method1");
+	}
+
+	public void method2() {
+		Print.print("method2()");
+	}
+
+	public static void main(String[] args) {
+
+		Outter obj = new Outter();
+		Interface.Inner.generalMethod(obj);
+
+	}
+
+}
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+interface U {
+	void f();
+
+	void g();
+
+	String toString();
+
+}
+
+class A {
+	U getU() {
+		return new U() {
+			public void f() {
+				Print.print("f()");
+			}
+
+			public void g() {
+				Print.print("g()");
+			}
+
+			public String toString() {
+				return ("iam U");
+			}
+		};
+	}
+}
+
+class B {
+	private U[] masU;
+
+	B(int i) {
+		masU = new U[i];
+	}
+
+	public void getUMas(U uTemp, int i) {
+		masU[i] = uTemp;
+	}
+
+	public void dropU(int i) {
+		masU[i] = null;
+	}
+
+	public void test() {
+		for (U temp : masU) {
+			temp.f();
+			temp.g();
+			temp.toString();
+		}
+	}
+
+	public void showAll() {
+		for (U temp : masU) {
+			if (temp != null)
+				Print.print(temp.toString());
+			else
+				Print.print("i am null");
+
+		}
+	}
+}
+
+public class Outter {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+
+ХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕРХОРОШИЙ ПРИМЕР
+
+
+
+interface Incrementable {
+	void increment();
+}
+
+class Callee1 implements Incrementable {
+	private int i = 0;
+
+	public void increment() {
+		i++;
+		Print.print(i);
+	}
+}
+
+class MyIncrement {
+	public void increment() {
+		Print.print("Другая операция");
+	}
+
+	public static void f(MyIncrement mi) {
+		mi.increment();
+	}
+}
+
+class Callee2 extends MyIncrement {
+	private int i = 0;
+
+	public void increment() {
+		super.increment();
+		i++;
+		Print.print(i);
+	}
+
+	private class Closure implements Incrementable
+
+	{
+		public void increment() {
+			Callee2.this.increment();
+		}
+
+	}
+
+	public Incrementable getCallbackReference() {
+		return new Closure();
+	}
+}
+
+class Caller {
+	private Incrementable callbackReference;
+
+	Caller(Incrementable temp) {
+		callbackReference = temp;
+	}
+
+	void go() {
+		callbackReference.increment();
+
+	}
+}
+
+public class Outter {
+
+	public static void main(String[] args) {
+
+		Callee1 c1 = new Callee1();
+		Caller caller1 = new Caller(c1);
+		caller1.go();
+		caller1.go();
+		//
+		Callee2 c2 = new Callee2();
+		MyIncrement.f(c2);
+		Caller caller2 = new Caller(c2.getCallbackReference());// callback closure
+		caller2.go();// closure
+		caller2.go();// closure
+
+	}
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+private Object[] items;
+	private int next = 0;
+
+	private String[] lineMas;
+
+	public Sequence(int size) {
+		items = new Object[size];
+		lineMas = new String[size];
+	}
+
+	public Sequence(String... args) {
+		lineMas = args;
+		items = new Object[0];
+	}
+
+	public void add(Object x) {
+		if (next < items.length)
+			items[next++] = x; // следующий
+
+	}
+	
+	
+	private int i = 0;
+		private int counter = 0;
+
+		// items(внешний)
+
+		public boolean end() {
+			return i == items.length;
+		}
+
+		public Object current() {
+			return items[i];
+		}
+
+		public void next() {
+			if (i < items.length)
+				i++;
+		}
+
+		public String getLine() {
+			if (counter < lineMas.length)
+				return lineMas[counter++];
+			else
+				return null;
+		}
+
+		public boolean end2() {
+			return counter == lineMas.length;
+		}
+
+		public Sequence getSequence() {
+			// return new Sequence();
+			return Sequence.this;
+		}
+		
+		
+		
+		
+		Sequence test = new Sequence(10);
+		Sequence test2 = new Sequence("000", "111", "333");
+		//
+		for (int i = 0; i < 10; i++)
+			test.add(Integer.toString(i)); // заполнили test
+		//
+
+		//
+		Selector selector = test.getSequece();
+		//
+
+		//
+		Selector selector2 = test2.getSequece();
+		//
+
+		Print.print("test: ");
+		while (!(selector.end())) {
+			Print.print(selector.current() + " ");
+			selector.next();// счётчик
+		}
+
+		Print.print("\ntest2:");
+		while (!(selector2.end2())) {
+			Print.print(selector2.getLine() + " ");
+		}
+		Print.print("\nsequence:");
+		Print.print(" " + test.getSequece().toString() + "\n");
+		Print.print(new Sequence().new SequenceSelector().toString());
+		
+		
+		]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+		package testProject;
+
+import PrintText.Matveev.Print;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
+
+abstract class Event {
+	private long eventTime;
+	protected final long delayTime;
+
+	public Event(long delayTime) {
+		this.delayTime = delayTime;
+		start();
+	}
+
+	public void start() {// время происхождения события
+		eventTime = System.nanoTime() + delayTime;
+	}
+
+	public boolean ready() {// пора дейстовать
+		return System.nanoTime() >= eventTime;// !
+
+	}
+
+	public abstract void action();
+}
+
+class Controller {// описывает систему,которая распоряжается и запускает их на обработку
+	private List<Event> eventList = new ArrayList<Event>();
+
+	public void addEvent(Event c) {
+		eventList.add(c);
+	}
+
+	public void run() {
+		while (eventList.size() > 0) {
+			for (Event temp : new ArrayList<Event>(eventList)) {// создать копию чтобы избежать модификации списка во
+																// время выборки элементов
+				if (temp.ready()) {
+					Print.print(temp);
+					temp.action();
+					eventList.remove(temp);
+				}
+			}
+		}
+	}
+}
+
+//
+class GreenHouseControls extends Controller {
+	private boolean light = false;
+
+	public class LightOn extends Event {
+		public LightOn(long delayTime) {
+			super(delayTime);
+		}
+
+		public void action() {
+			// код управления оборудованием
+			light = true;
+		}
+
+		public String toString() {
+			return "Свет включен";
+		}
+	}
+
+	public class LightOff extends Event {
+		public LightOff(long delayTime) {
+			super(delayTime);
+		}
+
+		public void action() {
+			// код управление оборудованием
+			light = false;
+		}
+
+		public String toString() {
+			return "Свет выключен";
+		}
+	}
+
+	private boolean water = false;
+
+	public class WaterOn extends Event {
+		public WaterOn(long delayTime) {
+			super(delayTime);
+		}
+
+		public void action() {
+			// код управление оборудованием
+			water = true;
+		}
+
+		public String toString() {
+			return "Полив включен";
+		}
+	}
+
+	public class WaterOff extends Event {
+		public WaterOff(long delayTime) {
+			super(delayTime);
+		}
+
+		public void action() {
+			// код управление оборудованием
+			water = false;
+		}
+
+		public String toString() {
+			return "Полив выключен";
+		}
+	}
+
+	private String thermostat = "Дeнь";
+
+	public class ThermoStatNight extends Event {
+		public ThermoStatNight(long delayTime) {
+			super(delayTime);
+		}
+
+		public void action() {
+			// код управление оборудованием
+			thermostat = "ночь";
+		}
+
+		public String toString() {
+			return "Термостат использует ночной режим";
+		}
+	}
+
+	public class ThermoStatDay extends Event {
+		public ThermoStatDay(long delayTime) {
+			super(delayTime);
+		}
+
+		public void action() {
+			// код управление оборудованием
+			thermostat = "день";
+		}
+
+		public String toString() {
+			return "Термостат использует дневной режим";
+		}
+	}
+
+	public class Bell extends Event {
+		public Bell(long delayTime) {
+			super(delayTime);
+		}
+
+		public void action() {
+			// код управление оборудованием
+			addEvent(new Bell(delayTime));// вставляет сам себя(обьект) в список событий
+		}
+
+		public String toString() {
+			return "BOOM!";
+		}
+	}
+
+	public class Restart extends Event {
+		private Event[] eventList;
+
+		public Restart(long delayTime, Event[] eventList) {
+			super(delayTime);
+			this.eventList = eventList;
+			for (Event temp : eventList) {
+				addEvent(temp);
+			}
+
+		}
+
+		public void action() {
+			for (Event temp : eventList) {
+				start();// перезапуск каждого события
+				addEvent(temp);
+			}
+
+			start();// перезапуск текущего события
+			addEvent(this);////////// !!!
+		}
+
+		public String toString() {
+			return "Перезаупуск системы";
+		}
+	}
+
+	public class Terminate extends Event {// public static
+
+		public Terminate(long delayTime) {
+			super(delayTime);
+		}
+
+		public void action() {
+			System.exit(0);
+		}
+
+		public String toString() {
+			return "Отключение";
+		}
+
+	}
+
+}
+
+public class GreenHouseController {
+	public static void main(String[] args) {
+
+		GreenHouseControls gc = new GreenHouseControls();
+
+		gc.addEvent(gc.new Bell(900));
+
+		Event[] eventList = { gc.new ThermoStatNight(0), gc.new LightOn(200), gc.new LightOff(400), gc.new WaterOn(600),
+				gc.new WaterOff(800), gc.new ThermoStatDay(1400),
+
+		};
+
+		gc.addEvent(gc.new Restart(2000, eventList));
+
+		if (args.length == 1) {
+			gc.addEvent(new GreenHouseControls().new Terminate(new Integer(args[0])));// {5000}
+		}
+
+		gc.run();
+
+		/*
+		 * long a = System.nanoTime(); Print.print(a); try { Print.print("jdi");
+		 * TimeUnit.SECONDS.sleep(5); } catch (InterruptedException ex) {
+		 * Thread.currentThread().interrupt(); } long b = System.nanoTime(); float f =
+		 * (b - a) / 1000000000; System.out.printf("%.3f", f);
+		 */
+	}
+}
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+class Outter {
+	private int i;
+
+	class Inner {
+		Inner(int i) {
+			Outter.this.i = i;
+		}
+	}
+
+	public void showI() {
+		Print.print(i);
+	}
+
+}
+
+class Other {
+	class Inner2 extends Outter.Inner {
+		Inner2(Outter o) {
+			o.super(256);
+		}
+	}
+}
+
+public class GreenHouseController {
+	public static void main(String[] args) {
+		Outter obj = new Outter();
+		Other.Inner2 obj2 = new Other().new Inner2(obj);
+		
+		obj.showI();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+
+
+
+
+
+interface Selector {
+	boolean end();
+
+	Object current();
+
+	void next();
+}
+
+class Sequence {
+	ArrayList<Object> items = new ArrayList<Object>();
+
+	public void add(Object x) {
+		items.add(x);
+	}
+
+	private class SequenceSelector implements Selector {
+		private int i = 0;
+
+		public Object current() {
+			return items.get(i);
+		}
+
+		public void next() {
+			i++;
+		}
+
+		public boolean end() {
+			return i == items.size();
+		}
+
+	}
+
+	public Selector selector() {
+		return new SequenceSelector();
+	}
+}
+
+public class GreenHouseController {
+
+	public static void main(String[] args) {
+
+		Sequence sequence = new Sequence();
+
+		for (int i = 0; i < 10; i++)
+			sequence.add(i);
+
+		Selector selector = sequence.selector();
+		while (!(selector.end())) {
+			Print.printnb(selector.current() + " ");
+			selector.next();
+		}
+		Print.print();
+		//sequence2.add(10);
+		
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+package testProject;
+
+import PrintText.Matveev.Print;
+import java.util.*;
+
+class Snow {
+}
+
+class Powder extends Snow {
+}
+
+class Crusty extends Snow {
+}
+
+class Slush extends Snow {
+}
+
+class Light extends Powder {
+}
+
+class Heavy extends Powder {
+}
+
+class PritingContainers {
+
+}
+
+public class GreenHouseController {
+
+	public static Collection fill(Collection<String> collection) {
+		collection.add("крыса");
+		collection.add("кошка");
+		collection.add("собака");
+		collection.add("собака");
+		return collection;
+	}
+
+	public static Map fill(Map<String, String> map) {
+		map.put("крыса", "Анфиса");
+		map.put("кошка", "Мурка");
+		map.put("собака", "Шарик");
+		map.put("собака", "Бобик");
+
+		return map;
+	}
+
+	public static void main(String[] args) {
+
+		List<Snow> snow1 = Arrays.asList(new Powder(), new Crusty());
+
+		List<Powder> snow2 = Arrays.asList(new Light(), new Heavy());
+
+		List<Snow> snow3 = new ArrayList<Snow>();
+
+		Collections.addAll(snow3, new Powder(), new Light(), new Heavy());
+
+		List<Powder> snow4 = Arrays.<Powder>asList(new Light(), new Heavy());
+
+		////////////////////////////////////////////////////////////////////////////////
+
+		Collection<Integer> masInt = new ArrayList<Integer>(Arrays.asList(9, 9, 9, 9, 9));
+		List<Integer> fuck = new ArrayList<Integer>(Arrays.asList(7, 7, 7));
+
+		masInt.addAll(fuck);
+
+		Integer[] mas123 = { 1, 2, 3 };
+
+		Collections.addAll(masInt, mas123);
+
+		Collections.addAll(masInt, 0, 0, 0, 0);
+
+		List<Integer> other = Arrays.asList(999, 999, 999);// фиксированный
+
+		/////////////////////////////////////////////////////////////////////////////////
+
+		Print.print(fill(new ArrayList<String>()));//ArrayList(список,в порядке вставки,опр. последоват.)
+		Print.print(fill(new LinkedList<String>()));// LinkedList(больше операций и быстрее List)
+		Print.print(fill(new HashSet<String>()));// Set!!!(множество,только по одному элементу определенного типа,порядок не важен,не встречаются оданнаковые элементы,хранят по-разному,быстрая выборка элементов)
+		Print.print(fill(new TreeSet<String>()));// TreeSet!!!(по-возрастанию)
+		Print.print(fill(new LinkedHashSet<String>()));// LinkedHashSet(в порядке добавления)
+		Print.print(fill(new HashMap<String, String>()));// Map(ассоциативный массив,в каждой яечйка хранится 2 обьекта,пара "ключ-значение",нет повторений,размер меняется автоматически,быстрая выборка)
+		Print.print(fill(new TreeMap<String, String>()));// TreeMap(по возрастанию)
+		Print.print(fill(new LinkedHashMap<String, String>()));// LinkedHashMap(в порядке вставки,добавления,без потери скорости)
+																// Queue(Очередь,вставка с 1 конца и извлечение из 2,разновидность последовательности)
+		
+		//////////////////////////////////////////////////////////////////////////////
+//		 other.add(1);
+
+		/*
+		 * for (Integer temp : masInt) Print.printnb(temp + " ");
+		 * 
+		 * for (Integer temp : fuck) Print.printnb(temp + " ");
+		 * 
+		 * for (Integer temp : other) Print.printnb(temp + " "); for (Snow temp : snow4)
+		 * Print.print(temp);
+		 */
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+package testProject;
+
+import PrintText.Matveev.Print;
+import java.util.*;
+
+class Snow {
+}
+
+class Powder extends Snow {
+}
+
+class Crusty extends Snow {
+}
+
+class Slush extends Snow {
+}
+
+class Light extends Powder {
+}
+
+class Heavy extends Powder {
+}
+
+class Generator {
+
+	private int key = 0;
+
+	public String next() {
+		switch (key) {
+		case 0: {
+			++key;
+			return "pers1";
+		}
+		case 1: {
+			++key;
+			return "pers2";
+		}
+		case 2: {
+			++key;
+			return "pers3";
+		}
+		case 3: {
+			++key;
+			return "pers4";
+		}
+		case 4: {
+			++key;
+			return "pers5";
+		}
+		case 5: {
+			++key;
+			return "pers6";
+		}
+		case 6: {
+			++key;
+			return "pers7";
+		}
+		case 7: {
+			++key;
+			return "pers8";
+		}
+		case 8: {
+			key = 0;
+			return "pers9";
+		}
+		default:
+			return null;
+		}
+
+	}
+
+	public void fillA(String[] a) {
+		for (int i = 0; i < a.length; i++)
+			a[i] = next();
+	}
+
+	public Collection fillA(Collection<String> a, int n) {
+		for (int i = 0; i < n; i++)
+			a.add(next());
+		return a;
+	}
+
+}
+
+public class GreenHouseController {
+
+	public static Collection fill(Collection<String> collection) {
+		collection.add("крыса");
+		collection.add("кошка");
+		collection.add("собака");
+		collection.add("собака");
+		return collection;
+	}
+
+	public static Map fill(Map<String, String> map) {
+		map.put("крыса", "Анфиса");
+		map.put("кошка", "Мурка");
+		map.put("собака", "Шарик");
+		map.put("собака", "Бобик");
+
+		return map;
+	}
+
+	public static void main(String[] args) {
+
+		List<Snow> snow1 = Arrays.asList(new Powder(), new Crusty());
+
+		List<Powder> snow2 = Arrays.asList(new Light(), new Heavy());
+
+		List<Snow> snow3 = new ArrayList<Snow>();
+
+		Collections.addAll(snow3, new Powder(), new Light(), new Heavy());
+
+		List<Powder> snow4 = Arrays.<Powder>asList(new Light(), new Heavy());
+
+		////////////////////////////////////////////////////////////////////////////////
+
+		Collection<Integer> masInt = new ArrayList<Integer>(Arrays.asList(9, 9, 9, 9, 9));
+		List<Integer> fuck = new ArrayList<Integer>(Arrays.asList(7, 7, 7));
+
+		masInt.addAll(fuck);
+
+		Integer[] mas123 = { 1, 2, 3 };
+
+		Collections.addAll(masInt, mas123);
+
+		Collections.addAll(masInt, 0, 0, 0, 0);
+
+		List<Integer> other = Arrays.asList(999, 999, 999);// фиксированный
+
+		/////////////////////////////////////////////////////////////////////////////////
+		СПРАВКА
+		Print.print(fill(new ArrayList<String>()));// ArrayList(список,в порядке вставки,опр. последоват.)
+		Print.print(fill(new LinkedList<String>()));// LinkedList(больше операций и быстрее List)
+		Print.print(fill(new HashSet<String>()));// Set!!!(множество,только по одному элементу определенного
+													// типа,порядок не важен,не встречаются оданнаковые элементы,хранят
+													// по-разному,быстрая выборка элементов)
+		Print.print(fill(new TreeSet<String>()));// TreeSet!!!(по-возрастанию)
+		Print.print(fill(new LinkedHashSet<String>()));// LinkedHashSet(в порядке добавления)
+		Print.print(fill(new HashMap<String, String>()));// Map(ассоциативный массив,в каждой яечйка хранится 2
+															// обьекта,пара "ключ-значение",нет повторений,размер
+															// меняется автоматически,быстрая выборка)
+		Print.print(fill(new TreeMap<String, String>()));// TreeMap(по возрастанию)
+		Print.print(fill(new LinkedHashMap<String, String>()));// LinkedHashMap(в порядке вставки,добавления,без потери
+																// скорости)
+																// Queue(Очередь,вставка с 1 конца и извлечение из
+																// 2,разновидность последовательности)
+																// если работаем с ссылкой то медленей,а если с индексом быстрее( + индексация медленней)		
+		//////////////////////////////////////////////////////////////////////////////
+		Print.print("\n");
+		Generator gen = new Generator();
+		String[] names = new String[5];
+		gen.fillA(names);
+		for (String s : names)
+			Print.printnb(s + " ");
+
+		Print.print();
+		Print.print("\n");
+		Print.print(gen.fillA(new ArrayList<String>(), 15));
+		Print.print(gen.fillA(new LinkedList<String>(), 5));
+		Print.print(gen.fillA(new HashSet<String>(), 15));
+		Print.print(gen.fillA(new LinkedHashSet<String>(), 9));
+		Print.print(gen.fillA(new TreeSet<String>(), 8));
+
+		/*
+		 * ArrayList<String> names1 = new ArrayList<String>(); LinkedList<String> names2
+		 * = new LinkedList<String>(); Collection<String> names3 = new
+		 * HashSet<String>(); Collection<String> names4 = new LinkedHashSet<String>();
+		 * Collection<String> names5 = new TreeSet<String>();
+		 */
+
+//		 other.add(1);
+
+		/*
+		 * for (Integer temp : masInt) Print.printnb(temp + " ");
+		 * 
+		 * for (Integer temp : fuck) Print.printnb(temp + " ");
+		 * 
+		 * for (Integer temp : other) Print.printnb(temp + " "); for (Snow temp : snow4)
+		 * Print.print(temp);
+		 */
+
+	}
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+import net.mindview.util.*;
+import typeinfo.pets.*;
+import java.util.*;
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+		Random rand = new Random(47);
+		List<Pet> pets = Pets.arrayList(7);
+		print("1: " + pets);
+		Hamster h = new Hamster();
+		pets.add(h);// с автоматическим измененнием размера
+		print("2: " + pets);
+		print("3: " + pets.contains(h));
+		pets.remove(h);
+		Pet p = pets.get(2);// Cymric
+		print("4: " + pets + " " + pets.indexOf(p));// index 1-го вхождение p
+		Pet cymric = new Cymric();
+		print("5: " + pets.indexOf(cymric));// зависит от equals()// элементы уникальны
+		print("6: " + pets.remove(cymric));
+		print("7 : " + pets.remove(p));
+		print("8 :" + pets);
+		pets.add(3, new Mouse());// вставка по инексу// не замена
+		print("9: " + pets);
+		List<Pet> sub = pets.subList(1, 4);
+		print("Частичный список :" + sub);
+		print("10 : " + pets.containsAll(sub));
+		Collections.sort(sub);// сортировка на месте
+		print("После сортировки : " + sub);
+		print("11: " + pets.containsAll(sub));
+		Collections.shuffle(sub, rand);
+		print("После перемешивания :" + sub);
+		print("12: " + pets.containsAll(sub));
+		List<Pet> copy = new ArrayList<Pet>(pets);
+		sub = Arrays.asList(pets.get(1), pets.get(4));// 1 и 4
+		print("sub : " + sub);
+		//
+		copy.retainAll(sub);// удаляет из copy тех кого нет в sub(пересечение множеств)
+		//
+		print("13: " + copy);
+		copy = new ArrayList<Pet>(pets);
+		// если работаем с ссылкой то думаем об equals + медленее
+		copy.remove(2);
+		print("14: " + copy);
+		copy.removeAll(sub);
+		print("15: " + copy);
+		copy.set(1, new Mouse());// замена элемента
+		print("16: " + copy);
+		print("matveev: ");
+		copy.addAll(2, sub);// вставка списка в середину
+		print("17: " + copy);
+		print("18: " + pets.isEmpty());
+		pets.clear();
+		print("19: " + pets);
+		print("20: " + pets.isEmpty());
+
+		pets.addAll(Pets.arrayList(4));
+		print("21 : " + pets);
+		Object[] o = pets.toArray();// тип не задан,значит Object
+		print("22: " + o[3]);
+		Pet[] pa = pets.toArray(new Pet[0]);// заданного типа Pet
+		print("23: " + pa[3].id());
+	}
+
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+import net.mindview.util.*;
+import typeinfo.pets.*;
+import java.util.*;
+
+class TempClass {
+	int value;
+
+	TempClass() {
+		Random rand = new Random();// System.currentTimeMillis())
+		this.value = rand.nextInt(100);
+	}
+
+	public String toString() {
+		return Integer.toString(value);
+	}
+}
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+		TempClass mas[] = { new TempClass(), new TempClass(), new TempClass(), new TempClass(), new TempClass() };
+		print("mas: ");
+		for (int i = 0; i < mas.length; i++)
+			printnb(mas[i] + " ");
+		printnb("\n");
+		List<TempClass> list = new ArrayList<TempClass>();
+		Collections.addAll(list, mas);
+		print("list:");
+		for (TempClass temp : list)
+			printnb(temp + " ");
+		List<TempClass> sub = list.subList(0, 2);
+		List<TempClass> copy = new ArrayList<TempClass>(list);
+		copy.removeAll(sub);
+		list = copy;
+		print("\nsubList:");
+		for (TempClass temp : sub)
+			printnb(temp + " ");
+		print("\nИтог:");
+		for (TempClass temp : list)
+			printnb(temp + " ");
+	}
+
+}
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+
+		List<Integer> list1 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
+		List<Integer> list2 = new ArrayList<Integer>();
+
+		ListIterator<Integer> it1 = list1.listIterator(list1.size());
+
+		while (it1.hasPrevious()) {
+			list2.add(it1.previous());
+
+		}
+		ListIterator<Integer> it2 = list2.listIterator();
+
+		while (it2.hasNext() & it1.hasNext()) {
+			// printnb(it2.next() + "(" + ")");
+			printnb(it1.next() + " ");
+		}
+
+	}
+
+}
+
+
+
+class CrossContainerIteration {
+	public static void display(Iterator<Pet> it) {
+		while (it.hasNext()) {
+			Pet p = it.next();
+			printnb(p.id() + ":" + p + " ");
+		}
+		print();
+	}
+}
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+		ArrayList<Pet> pets = Pets.arrayList(8);
+		LinkedList<Pet> petsLL = new LinkedList<Pet>(pets);
+		HashSet<Pet> petsHS = new HashSet<Pet>(pets);
+		TreeSet<Pet> petsTS = new TreeSet<Pet>(pets);
+		CrossContainerIteration.display(pets.iterator());
+		CrossContainerIteration.display(petsLL.iterator());
+		CrossContainerIteration.display(petsHS.iterator());
+		CrossContainerIteration.display(petsTS.iterator());
+
+	}
+	
+	
+	
+	
+	]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+	
+	
+	
+	
+	
+	public class ListFeatures {
+	public static void main(String[] args) {
+		Integer[] mas = new Integer[10];
+		LinkedList<Integer> list = new LinkedList<Integer>(Arrays.asList(mas));
+		ListIterator<Integer> it = list.listIterator((int) (list.size() / 2));
+
+		int i = 5, j = 4;
+		while (it.hasNext()) {
+			it.next();
+			list.set(j, j--);
+			list.set(i, i++);
+
+		}
+
+		for (Integer temp : list)
+			printnb(temp + " ");
+
+	}
+}
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+public class ListFeatures {
+	public static void main(String[] args) {
+		Integer[] mas = new Integer[10];
+		LinkedList<Integer> list = new LinkedList<Integer>(Arrays.asList(mas));
+		ListIterator<Integer> it = list.listIterator((int) (list.size() / 2));
+
+		int i = 5, j = 4;
+		while (it.hasNext()) {
+			it.next();
+			list.set(j, j--);
+			list.set(i, i++);
+
+		}
+
+		for (Integer temp : list)
+			printnb(temp + " ");
+
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+	
+	РЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕРЕГУЛЯРНЫЕ
+	
+	
+	package testProject;
+
+import static net.mindview.util.Print.*;
+import net.mindview.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+
+public class ListFeatures {
+	public static void main(String[] args) {
+		Stack<String> stack = new Stack<String>();
+		String text = "+U+n+c---+e+r+t---+a+i-+n+t+y---+ +r-+u---+l+e+s---";// +U+n+c+e+r+t+a+i+n+t+y++r-+u+l+e+s----------------
+																			// or +U+n+c---+e+r+t---+a+i-+n+t+y---+ +r-+u---+l+e+s---
+
+		Pattern pattern = Pattern.compile("((\\w)|(\\s))|\\-");
+		Matcher matcher = pattern.matcher(text);
+
+		while (matcher.find()) {
+			String temp = text.substring(matcher.start(), matcher.end());
+			// printnb(temp);
+
+			if (!(temp.equals("-"))) {
+				stack.push(temp);// addfirst
+
+			} else if (temp.equals(" ")) {
+				stack.push(temp);
+
+			} else if (temp.equals("-") & !stack.empty())// !
+				printnb(stack.pop());// removeadd
+
+		}
+
+	}
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+	
+	
+	
+	package testProject;
+
+import static net.mindview.util.Print.*;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+public class ListFeatures {
+	public static Map<Person, List<Pet>> petPeople = new HashMap<Person, List<Pet>>();// <Person,? extends Pet>
+	static {
+		petPeople.put(new Person("Nigga"), Arrays.asList(new Cymric("Cymric"), new Rat("Rat"), new Pug("Pug")));
+		petPeople.put(new Person("Matveev"), Arrays.asList(new Dog("Dog"), new Cat("Cat"), new Mutt("Mutt")));
+		// Cymric Mutt Dog Cat Pug Rat
+	}
+
+	public static void main(String[] args) {
+		printnb(petPeople.keySet());// Set!!!
+		print();
+		printnb(petPeople.values());// Collections!!!!
+
+		for (Person person : petPeople.keySet()) {
+			print("\n" + person + " has ");
+			/*
+			 * Iterator it = petPeople.get(person).iterator();
+			 * 
+			 * for (Pet pet : petPeople.get(person)) printnb(pet);
+			 */
+
+			while (petPeople.get(person).iterator().hasNext())
+				printnb(petPeople.get(person).iterator().next() + " ");
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+class Gerbil {
+	private int gerbilNumber;
+
+	Gerbil(int gerbilNumber) {
+		this.gerbilNumber = gerbilNumber;
+	}
+
+	public void hop() {
+		printnb(gerbilNumber + " message ");
+	}
+
+	public String toString() {
+		return Integer.toString(gerbilNumber);
+	}
+
+}
+
+public class ListFeatures {
+	public static Map<String, List<Gerbil>> gerbilMap = new HashMap<String, List<Gerbil>>();
+	static {
+		gerbilMap.put("Name", Arrays.asList(new Gerbil(12), new Gerbil(111), new Gerbil(55)));
+		gerbilMap.put("Charles",
+				Arrays.asList(new Gerbil(99), new Gerbil(44), new Gerbil(0), new Gerbil(1), new Gerbil(2)));
+		gerbilMap.put("Brian",
+				Arrays.asList(new Gerbil(1), new Gerbil(7774), new Gerbil(981), new Gerbil(23), new Gerbil(24)));
+	}
+
+	public static void main(String[] args) {
+		print("keys : " + gerbilMap.keySet());
+		print("values : " + gerbilMap.values());
+		print();
+		/*
+		 * Iterator<String> it = gerbilMap.keySet().iterator(); while (it.hasNext()) {
+		 * String key = it.next(); print(key + " : "); for (int i = 0; i <
+		 * gerbilMap.get(key).size(); i++) gerbilMap.get(key).get(i).hop(); print(); }
+		 */
+		print(gerbilMap);
+		Set<String> sortedKeys = new TreeSet<String>(gerbilMap.keySet());
+		Map<String, List<Gerbil>> sortedMap = new LinkedHashMap<String, List<Gerbil>>();
+		for (String s : sortedKeys) {
+			sortedMap.put(s, gerbilMap.get(s));
+
+		}
+		print();
+		print(sortedMap);
+
+		Map<String, List<Gerbil>> sortedMap2 = new TreeMap<String, List<Gerbil>>(gerbilMap);
+		print(sortedMap2);
+
+	}
+}
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+public class ListFeatures {
+	public static int search(String str, Character ch) {
+		int countVowell = 0;
+		int i = 0;
+
+		while (i != str.length()) {
+			if (ch.equals(str.charAt(i++)))
+				countVowell++;
+		}
+		return countVowell;
+	}
+
+	public static void main(String[] args) {
+
+		List<String> words = new ArrayList<String>();// String.CASE_INSENSITIVE_ORDER - это компоратор
+		Set<Character> vowell = new TreeSet<Character>(Arrays.asList('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u'));
+		Map<Character, Integer> countVowell = new LinkedHashMap<Character, Integer>();// <? extends Integer>
+
+		words.addAll(new TextFile("D:\\eclipse\\workspace\\testProject\\src\\testProject\\JavaProg.java",
+				"\\W+"));/* квантификатор "+" */
+
+		int result = 0;
+		Iterator<Character> it = vowell.iterator();
+		while (it.hasNext()) {
+			Character vwll = it.next();
+			for (String wrd : words) {
+				result += search(wrd, vwll);
+			}
+			// print(Character.toString(vwll) + " " + Integer.toString(result));
+			countVowell.put(vwll, result);
+			result = 0;
+		}
+		print(countVowell);
+		print();
+		for (Character vwll : countVowell.keySet()) {
+			result += countVowell.get(vwll);
+		}
+		print("all vowels is " + result);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+public class ListFeatures {
+	public static int search(String str, Character ch) {
+		int countVowell = 0;
+		int i = 0;
+
+		while (i != str.length()) {
+			if (ch.equals(str.charAt(i++)))
+				countVowell++;
+		}
+		return countVowell;
+	}
+
+	public static void main(String[] args) {
+
+		List<String> words = new ArrayList<String>();// String.CASE_INSENSITIVE_ORDER - это компоратор
+		Set<Character> vowell = new TreeSet<Character>(Arrays.asList('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u'));
+		Map<Character, Integer> countVowell = new LinkedHashMap<Character, Integer>();// <? extends Integer>
+
+		words.addAll(new TextFile("D:\\eclipse\\workspace\\testProject\\src\\testProject\\JavaProg.java",
+				"\\W+"));/* квантификатор "+" */
+
+		int result = 0;
+		Iterator<Character> it = vowell.iterator();
+		while (it.hasNext()) {
+			Character vwll = it.next();
+			for (String wrd : words) {
+				result += search(wrd, vwll);
+			}
+			// print(Character.toString(vwll) + " " + Integer.toString(result));
+			countVowell.put(vwll, result);
+			result = 0;
+		}
+		print(countVowell);
+		print();
+		for (Character vwll : countVowell.keySet()) {
+			result += countVowell.get(vwll);
+		}
+		print("all vowels is " + (result + 1));
+	}
+
+}
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		list.addAll((new TextFile("D:\\eclipse\\workspace\\testProject\\src\\testProject\\JavaProg.java",
+				"\\s")));/* квантификатор "+" */
+
+		Map<String, Integer> map = new TreeMap<String, Integer>(String.CASE_INSENSITIVE_ORDER);// String.CASE_INSENSITIVE_ORDER
+																								// - это компоратор
+		for (String str : list) {
+			Integer count = 0;
+			count = map.get(str);
+			map.put(str, count == null ? 1 : count + 1);
+		}
+
+		// Collections.sort(map, String.CASE_INSENSITIVE_ORDER);
+		print(map);
+
+	}
+
+}
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.lang.reflect.Array;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+class TempClass {
+	String word;
+	int counter = 0;
+}
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		list.addAll((new TextFile("D:\\eclipse\\workspace\\testProject\\src\\testProject\\JavaProg.java",
+				"\\s")));/* квантификатор "+" */
+
+		Map<String, Integer> map = new TreeMap<String, Integer>(String.CASE_INSENSITIVE_ORDER);// String.CASE_INSENSITIVE_ORDER-
+																								// это компоратор
+
+		for (String str : list) {
+			Integer count = 0;
+			count = map.get(str);
+			map.put(str, count == null ? 1 : count + 1);
+		}
+
+		TempClass[] arr = new TempClass[map.size()];
+		for (int i = 0; i < arr.length; i++)
+			arr[i] = new TempClass();
+
+		Set<TempClass> set = new HashSet<TempClass>(Arrays.asList(arr));
+
+		// Collections.addAll(set, arr);
+		Iterator<TempClass> it = set.iterator();
+		for (String word : map.keySet()) {
+			if (it.hasNext()) {
+				TempClass temp = it.next();
+				temp.word = word;
+				temp.counter = map.get(word);
+			}
+
+		}
+		it = set.iterator();
+		while (it.hasNext()) {
+			TempClass temp = it.next();
+			print(temp.word + " " + temp.counter);
+		}
+
+		// Collections.sort(map, String.CASE_INSENSITIVE_ORDER);
+
+	}
+
+}
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.lang.reflect.Array;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+class TempClass {
+	String word;
+	int counter = 0;
+}
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		list.addAll((new TextFile("D:\\eclipse\\workspace\\testProject\\src\\testProject\\JavaProg.java",
+				"\\s")));/* квантификатор "+" */
+
+		Map<String, Integer> map = new TreeMap<String, Integer>(String.CASE_INSENSITIVE_ORDER);// String.CASE_INSENSITIVE_ORDER-
+																								// это компоратор
+
+		for (String str : list) {
+			Integer count = 0;
+			count = map.get(str);
+			map.put(str, count == null ? 1 : count + 1);
+		}
+
+		TempClass[] arr = new TempClass[map.size()];
+		for (int i = 0; i < arr.length; i++)
+			arr[i] = new TempClass();
+
+		Set<TempClass> set = new HashSet<TempClass>(Arrays.asList(arr));
+
+		// Collections.addAll(set, arr);
+		Iterator<TempClass> it = set.iterator();
+		for (String word : map.keySet()) {
+			if (it.hasNext()) {
+				TempClass temp = it.next();
+				temp.word = word;
+				temp.counter = map.get(word);
+			}
+
+		}
+		it = set.iterator();
+		while (it.hasNext()) {
+			TempClass temp = it.next();
+			print(temp.word + " " + temp.counter);
+		}
+
+		// Collections.sort(map, String.CASE_INSENSITIVE_ORDER);
+
+	}
+
+}
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.lang.reflect.Array;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+		Random rand = new Random(47);
+		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		for (int i = 0; i < 1000; i++) {
+			Integer r = rand.nextInt(21);
+			Integer freq = map.get(r);
+			map.put(r, freq == null ? 1 : freq + 1);
+		}
+		int max = 0, key = 0;
+		for (Integer temp : map.keySet()) {
+			if (map.get(temp) > max) {
+				max = map.get(temp);
+				key = temp;
+			}
+
+		}
+		print(map);
+		print("max : " + Integer.toString(key) + "=" + Integer.toString(max));
+	}
+
+}
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.lang.reflect.Array;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+public class ListFeatures {
+	private static int getBestInt20(int n) {
+		Random rand = new Random();
+		Map<Integer, Integer> m = new TreeMap<Integer, Integer>();
+		for (int i = 0; i < n; i++) {
+			int r = rand.nextInt(20);
+			Integer freq = m.get(r);
+			m.put(r, freq == null ? 1 : freq + 1);
+		}
+		int max = 0;
+		for (int i = 0; i < m.keySet().size(); i++) {
+			max = max < m.get(i) ? m.get(i) : max;
+		}
+		// print(m.entrySet());
+		//printnb(max);(1)
+
+		Set<Map.Entry<Integer, Integer>> me = new LinkedHashSet<Map.Entry<Integer, Integer>>(m.entrySet());
+		int maxKey = 0;
+		Iterator<Map.Entry<Integer, Integer>> it = me.iterator();
+		Map.Entry<Integer, Integer> findMax;
+		while (it.hasNext()) {
+			findMax = it.next();
+			if (findMax.getValue() == max)// пиздец зачем это блять так сложно
+				maxKey = findMax.getKey();
+		}
+		//print("(" + maxKey + ")");(1)
+		return maxKey;// key от максимального value в map "m"
+	}
+
+	public static void main(String[] args) {
+		Map<Integer, Integer> m20 = new TreeMap<Integer, Integer>();
+		for (int i = 0; i < 2000; i++) {
+			int x = getBestInt20(100000);
+			Integer freq = m20.get(x);
+			m20.put(x, freq == null ? 1 : freq + 1);
+		}
+		System.out.println("\nMost often picked ints, 0 - 19, in 2000 tests of 10,000 random picks: " + m20);
+	}
+}
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.lang.reflect.Array;
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+		Map<String, String> map = new LinkedHashMap<String, String>();
+		map.put("cccc", "literalc");
+		map.put("bbbb", "literalb");
+		map.put("12345", "numbers");
+		map.put("aaaa", "literala");
+		map.put("zzzz", "literalz");
+		List<String> keys = new ArrayList<String>(map.keySet());
+		Map<String, String> copyMap = new LinkedHashMap<String, String>(map);
+		map.clear();
+
+		Collections.sort(keys, String.CASE_INSENSITIVE_ORDER);
+		for (int i = 0; i < keys.size(); i++)
+			map.put(keys.get(i), copyMap.get(keys.get(i)));
+		print(map);
+	}
+}
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+ХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕХОРОШЕЕ ЗАДАНИЕ
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+import net.mindview.util.TextFile;
+
+public class ListFeatures {
+
+	private static void countingWords(Map<String, ArrayList<Integer>> map, List<String> words) {
+		for (int i = 0; i < words.size(); i++) {
+			ArrayList<Integer> freq = map.get(words.get(i));
+			if (freq == null) {
+				freq = new ArrayList<Integer>();
+				freq.add(0, 1);
+				map.put(words.get(i), freq);
+			} else {
+				int temp = freq.get(0);
+				freq.set(0, ++temp);
+				map.put(words.get(i), freq);
+			}
+
+		}
+		for (String temp : map.keySet())
+			print(temp + " " + map.get(temp));
+	}
+
+	private static void countingPosWords(Map<String, ArrayList<Integer>> map, List<String> words) {
+		int count = 1;
+		for (int i = 0; i < words.size(); i++) {
+			ArrayList<Integer> freq = map.get(words.get(i));
+			count++;
+			if (freq == null) {
+				freq = new ArrayList<Integer>();
+				freq.add(0, count);
+				map.put(words.get(i), freq);
+			} else {
+				map.get(words.get(i)).add(count);
+				map.put(words.get(i), map.get(words.get(i)));
+			}
+
+		}
+		for (String temp : map.keySet())
+			print(temp + " " + map.get(temp));
+	}
+
+	public static void main(String[] args) {
+		Map<String, ArrayList<Integer>> map = new LinkedHashMap<String, ArrayList<Integer>>();
+
+		List<String> words = new ArrayList<String>(
+				new TextFile("D:\\eclipse\\workspace\\suda\\sourcecode1\\net\\mindview\\util\\TextFile.java", "\\W+"));
+		//countingWords(map, words);
+		//countingPosWords(map, words);
+
+	}
+
+}
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+import net.mindview.util.TextFile;
+
+class Command {
+	private String line;
+	private static int i = 0;
+
+	Command(String line) {
+		this.line = line;
+	}
+
+	public void operation() {
+		print(line + " ");
+	}
+
+	@Override
+	public String toString() {
+		return Integer.toString(++i);
+	}
+
+}
+
+class QueueFill {
+	private Queue<Command> tempQueue = new LinkedList<Command>();
+
+	public Queue<Command> fill(List<Command> tempList) {
+		this.tempQueue = new LinkedList<Command>(tempList);
+		print(this.tempQueue);
+		return tempQueue;
+	}
+
+}
+
+class OutputQueue {
+	private Queue<Command> commandQueue = new LinkedList<Command>();
+
+	public void output(Queue<Command> tempQueue) {
+		this.commandQueue = tempQueue;
+		while (!commandQueue.isEmpty())
+			commandQueue.remove().operation();
+
+	}
+}
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+
+		List<Command> commandList = new ArrayList<Command>(
+				Arrays.asList(new Command("one"), new Command("two"), new Command("three"), new Command("four"),
+						new Command("five"), new Command("six"), new Command("seven")));
+		Queue<Command> commandQueue = new LinkedList<Command>();
+
+		QueueFill fillObj = new QueueFill();
+		commandQueue = fillObj.fill(commandList);
+
+		OutputQueue outputObj = new OutputQueue();
+		outputObj.output(commandQueue);
+	}
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+import net.mindview.util.TextFile;
+
+class Simple {
+
+}
+
+public class ListFeatures {
+
+	public static void main(String[] args) {
+		PriorityQueue<Integer> queue = new PriorityQueue<Integer>();
+		Random rand = new Random();
+		for (int i = 0; i < 10; i++)
+			queue.offer(i + 10);
+		print(queue);
+
+		List<Integer> ints = Arrays.asList(7, 88, 12, 0, 15, 66, 99, 24, 0, 16, 4, 32, 88);
+		queue = new PriorityQueue<Integer>(ints);
+		print("queue : " + queue);
+		queue = new PriorityQueue<Integer>(ints.size(), Collections.reverseOrder());// reverse естесственный встроенный
+																					// порядок
+		queue.addAll(ints);
+		print("addAll : " + queue);
+		print();
+
+		String fact = "EDUCATION SHOULD ESCHEW OBFUSCATION";
+		List<String> strings = Arrays.asList(fact.split(""));
+		print("strings :" + strings);
+		PriorityQueue<String> stringsPQueue = new PriorityQueue<String>(strings);
+		print("stringsPQueue : " + stringsPQueue);
+		stringsPQueue = new PriorityQueue<String>(strings.size(), Collections.reverseOrder());
+		stringsPQueue.addAll(strings);
+		print("stringsPQueue(revers): " + stringsPQueue);
+		print();
+
+		Set<Character> charSet = new HashSet<Character>();
+		for (Character c : fact.toCharArray())
+			charSet.add(c);
+		PriorityQueue<Character> charSetPQ = new PriorityQueue<Character>(charSet);
+		print(charSetPQ);
+		print();
+
+		PriorityQueue<Double> doublePQ = new PriorityQueue<Double>();
+		for (int i = 0; i < 10; i++)
+			doublePQ.offer(rand.nextDouble());
+		print("doublePQ" + doublePQ);
+		print();
+		Iterator<Double> it = doublePQ.iterator();
+		while (it.hasNext())
+			printf("%.4f ", it.next());
+		print();
+		print();
+		while (!doublePQ.isEmpty())
+			print(doublePQ.poll());
+		PriorityQueue<Simple> simples = new PriorityQueue<Simple>();
+
+		Object object = new Object();
+		
+
+	}
+
+}
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+
+PriorityQueue<Integer> queue = new PriorityQueue<Integer>();
+		Random rand = new Random();
+		for (int i = 0; i < 10; i++)
+			queue.offer(i + 10);
+		print(queue);
+
+		List<Integer> ints = Arrays.asList(7, 88, 12, 0, 15, 66, 99, 24, 0, 16, 4, 32, 88);
+		queue = new PriorityQueue<Integer>(ints);
+		print("queue : " + queue);
+		queue = new PriorityQueue<Integer>(ints.size(), Collections.reverseOrder());// reverse естесственный встроенный
+																					// порядок
+		queue.addAll(ints);
+		print("addAll : " + queue);
+		print();
+
+		String fact = "EDUCATION SHOULD ESCHEW OBFUSCATION";
+		List<String> strings = Arrays.asList(fact.split(""));
+		print("strings :" + strings);
+		PriorityQueue<String> stringsPQueue = new PriorityQueue<String>(strings);
+		print("stringsPQueue : " + stringsPQueue);
+		stringsPQueue = new PriorityQueue<String>(strings.size(), Collections.reverseOrder());
+		stringsPQueue.addAll(strings);
+		print("stringsPQueue(revers): " + stringsPQueue);
+		print();
+
+		Set<Character> charSet = new HashSet<Character>();
+		for (Character c : fact.toCharArray())
+			charSet.add(c);
+		PriorityQueue<Character> charSetPQ = new PriorityQueue<Character>(charSet);
+		print(charSetPQ);
+		print();
+
+		PriorityQueue<Double> doublePQ = new PriorityQueue<Double>();
+		for (int i = 0; i < 10; i++)
+			doublePQ.offer(rand.nextDouble());
+		print("doublePQ" + doublePQ);
+		print();
+		Iterator<Double> it = doublePQ.iterator();
+		while (it.hasNext())
+			printf("%.4f ", it.next());
+		print();
+		print();
+		while (!doublePQ.isEmpty())
+			print(doublePQ.poll());
+		// PriorityQueue<Simple> simples = new PriorityQueue<Simple>();
+
+		Object object = new Object();
+
+		List<Simple> smpls = Collections.emptyList();
+		
+		
+		
+		
+		
+		
+		
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+import net.mindview.util.TextFile;
+
+public class NonCollectionSequence implements Collection<Pet> {
+	private Pet[] pets = Pets.createArray(8);
+
+	public int size() {
+		return pets.length;
+	}
+
+	public Iterator<Pet> iterator() {
+		return new Iterator<Pet>() {
+			private int index = 0;
+
+			public boolean hasNext() {
+				return index < pets.length;
+			}
+
+			public Pet next() {
+				return pets[index++];
+			}
+
+			public void remove() {// not implemented
+				throw new UnsupportedOperationException();
+			}
+		};
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return ((size() == 0) ? true : false);
+	}
+
+	@Override
+	public boolean contains(Object o) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public Object[] toArray() {
+		return pets;
+	}
+
+	@Override
+	public <T> T[] toArray(T[] a) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public boolean add(Pet e) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public boolean remove(Object o) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public boolean containsAll(Collection<?> c) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public boolean addAll(Collection<? extends Pet> c) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public boolean removeAll(Collection<?> c) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public boolean retainAll(Collection<?> c) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public void clear() {
+		while (size() != 0)
+			for (Pet p : pets)
+				p = null;
+	}
+
+	public static void main(String[] args) {
+		NonCollectionSequence c = new NonCollectionSequence();
+		c.isEmpty();
+	}
+
+}
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+import net.mindview.util.TextFile;
+
+public class RandomShapeGenerator implements Iterable<Shape> {
+	private Random rand = new Random(47);
+
+	public Shape make() {
+
+		switch (rand.nextInt(3)) {
+		default:
+		case 0:
+			return new Circle();
+		case 1:
+			return new Square();
+		case 2:
+			return new Triangle();
+		}
+	}
+
+	private Shape[] shapes;
+
+	RandomShapeGenerator(int quantity) {
+		shapes = new Shape[quantity];
+		for (int i = 0; i < quantity; i++)
+			shapes[i] = make();
+	}
+
+	@Override
+	public Iterator<Shape> iterator() {
+
+		return new Iterator<Shape>() {
+			private int index = 0;
+
+			public boolean hasNext() {
+				return index < shapes.length;
+			}
+
+			public Shape next() {
+				return shapes[index++];
+			}
+
+			public void remove() {
+				throw new UnsupportedOperationException();
+			}
+		};
+	}
+
+	public static void main(String[] args) {
+		RandomShapeGenerator rGen = new RandomShapeGenerator(15);
+		for (Shape s : rGen) {
+			print("\t" + s + ":");
+			s.draw();
+			s.erase();
+		}
+
+	}
+}
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+/*
+ * 
+ * 
+ * 
+ * РЕШИ В СЛЕДУЮЩИЙ РАЗ!РЕШИ В СЛЕДУЮЩИЙ РАЗ!РЕШИ В СЛЕДУЮЩИЙ РАЗ!РЕШИ В СЛЕДУЮЩИЙ РАЗ!РЕШИ В СЛЕДУЮЩИЙ РАЗ!РЕШИ В СЛЕДУЮЩИЙ РАЗ!РЕШИ В СЛЕДУЮЩИЙ РАЗ!
+ * 
+ * 
+ * 
+ * package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+import net.mindview.util.TextFile;
+
+class MultiIterableClass<T> T implements Iterable<Object> {
+	// <T>
+
+	protected T[] mas;
+
+	MultiIterableClass(T n, Class<T> clazz) {
+		mas = (T)new T[10];
+		for (T i = 0; i < n; (T) i++)
+			mas[(T) i] = i;
+	}
+
+	Iterable<Object> reversed() {
+		return new Iterable<Object>() {
+			public Iterator<Object> iterator() {
+				return new Iterator<Object>() {
+					private int curIndex = mas.length - 1;
+					private int index = 0;
+
+					public boolean hasPrev() {
+						return curIndex > -1;
+					}
+
+					public Object current() {
+						return mas[curIndex--];
+					}
+
+					public void remove() {
+						throw new UnsupportedOperationException();
+					}
+
+					public boolean hasNext() {
+						return index < mas.length;
+					}
+
+					public Object next() {
+						return mas[index++];
+					}
+
+				};
+			}
+		};
+	}
+
+	Iterable<Object> randomized() {
+		return new Iterable<Object>() {
+			public Iterator<Object> iterator() {
+				// return new Iterator<Object>()
+				Random rand = new Random(47);
+				List<Object> shuffled = new ArrayList<Object>(Arrays.asList(mas));
+				Collections.shuffle(shuffled, rand);
+				return shuffled.iterator();
+			}
+		};
+	}
+
+	public Iterator<Object> iterator() {
+
+		return new Iterator<Object>() {
+			private int index = 0;
+
+			public boolean hasNext() {
+				return index < mas.length;
+			}
+
+			public Object next() {
+				return mas[index++];
+			}
+
+			public void remove() {
+				throw new UnsupportedOperationException();
+			}
+		};
+	}
+}
+
+public class ForTestClass {
+	public static void main(String[] args) {
+		MultiIterableClass obj = new MultiIterableClass(10, Integer.class);// <Integer> or String.class
+		for (Integer i : obj)
+			print(i + " ");
+
+	}
+}
+
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+import net.mindview.util.TextFile;
+//MultiIterableClass
+
+class MultiIterableClass<T> extends ArrayList<T> {
+	private T[] mas;
+
+	public MultiIterableClass(Collection<T> c) {
+		mas = (T[]) c.toArray();
+	}
+
+	public Iterable<T> reversed() {
+		return new Iterable<T>() {
+			public Iterator<T> iterator() {
+				return new Iterator<T>() {
+					int curIndex = size() - 1;
+
+					public boolean hasNext() {
+						return curIndex > -1;
+					}
+
+					public T next() {
+						return get(curIndex--);
+					}
+
+					public void remove() {
+						throw new UnsupportedOperationException();
+					}
+
+				};
+			}
+		};
+	}
+
+	public Iterable<T> randomized() {
+		return new Iterable<T>() {
+			public Iterator<T> iterator() {
+				Random rand = new Random(44);
+				List<T> shuffled = new ArrayList<T>();// Arrays.AsList
+				Collections.shuffle(shuffled, rand);
+				return shuffled.iterator();
+			};
+		};
+	}
+}
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		List<String> coll = new ArrayList<String>(Arrays.asList("1", "2", "3", "4", "5", "6"));
+		MultiIterableClass<String> it = new MultiIterableClass<String>(coll);
+
+	}
+
+}
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+import net.mindview.util.TextFile;
+
+class MyException extends Exception {
+
+	private String line;
+
+	MyException() {
+
+	}
+
+	MyException(String str) {
+		super(str);
+		this.line = str;
+	}
+
+	public void showLine() {
+		print(this.line);
+	}
+
+	public void f() throws MyException {
+		throw new MyException();
+	}
+
+}
+
+public class MainClass {
+	static int[] mas = new int[2];
+	static int counter = 5;
+
+	public static void main(String[] args) {
+
+		while (true) {
+			try {
+				mas[counter] = 99;
+				break;
+
+			} catch (ArrayIndexOutOfBoundsException e) {
+				System.err.println("Caught ArrayIndexOutOfBoundsException");
+				e.printStackTrace();// System.err
+				counter--;
+			} finally {
+				print("Are we done yet?");
+			}
+		}
+
+		print("Now,we're done!");
+
+	}
+
+}
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import typeinfo.pets.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+import net.mindview.util.TextFile;
+import java.util.logging.*;
+import java.io.*;
+
+class LoggingException {
+	private static Logger logger = Logger.getLogger("LoggingException");
+
+	static void logException(Exception e) {
+		StringWriter trace = new StringWriter();
+		e.printStackTrace(new PrintWriter(trace));// printrStackTrace'у(ерегруженной версии) передается обьект
+													// PrintWriter,которому передается StringWriter --> выыод в формате
+													// String(toString)
+		logger.severe(trace.toString());
+	}
+
+}
+
+public class MainClass {
+
+	public static void main(String[] args) {
+
+		try {
+			throw new NullPointerException();
+		} catch (NullPointerException e) {
+			LoggingException.logException(e);// регистрация исключения
+
+		}
+
+	}
+
+}
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import java.util.logging.*;
+import java.io.*;
+
+class MyException extends Exception {
+	public static Logger logger = Logger.getLogger("MyException");
+
+	MyException() {
+		StringWriter trace = new StringWriter();
+		printStackTrace(new PrintWriter(trace));
+		logger.severe(trace.toString());
+	}
+}
+
+class ExceptionMatveev extends Exception {
+	public static Logger logger = Logger.getLogger("ExceptionMatveev");
+
+	ExceptionMatveev() {
+		StringWriter trace = new StringWriter();
+		printStackTrace(new PrintWriter(trace));
+		logger.severe(trace.toString());
+	}
+}
+
+public class MainClass {
+
+	public static Logger logger = Logger.getLogger("matveev");
+
+	public static void logException(Exception e) {
+		StringWriter trace = new StringWriter();
+		e.printStackTrace(new PrintWriter(trace));
+		logger.severe(trace.toString());
+	}
+
+	public static void main(String[] args) {
+
+		/*
+		 * try { throw new MyException(); } catch (Exception e) { e.printStackTrace(); }
+		 * 
+		 * try { throw new ExceptionMatveev(); } catch (Exception e) {
+		 * e.printStackTrace(); }
+		 */
+
+		int[] mas = new int[2];
+
+		try {
+			mas[2 + 1] = 10;
+
+		} catch (ArrayIndexOutOfBoundsException e) {
+			e.printStackTrace();
+			logException(e);
+		}
+
+	}
+
+}
+
+/*
+ * private int x;
+ * 
+ * MyException() {
+ * 
+ * }
+ * 
+ * MyException(String msg) { super(msg); }
+ * 
+ * MyException(String msg, int x) { super(msg); this.x = x; }
+ * 
+ * public int val() { return x; }
+ * 
+ * public String getMessage() { return "detailed message " + x + " " +
+ * super.getMessage(); }
+ */
+
+ 
+ 
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ 
+ 
+ 
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import java.util.logging.*;
+import java.io.*;
+
+public class Rethrowing extends Exception {
+	public static void f() throws Exception {
+		print("Создание исключения в f()");
+		throw new Exception("Возбуждено из f()");
+	}
+
+	public static void g() throws Exception {
+		try {
+			print("Вызов f() из g()");
+			f();
+		} catch (Exception e) {
+			print("из метода g(),e.printStackTrace():");
+			e.printStackTrace();
+			throw e;
+		}
+	}
+
+	public static void h() throws Exception {
+		try {
+			print("Вызов f() из h()");
+			f();
+		} catch (Exception e) {
+			print("из метода h(),e.printStackTrace():");
+			e.printStackTrace();
+			throw (Exception) e.fillInStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		try {
+			g();
+		} catch (Exception e) {
+			print("Из main: printStackTrace:");
+			e.printStackTrace();
+
+		}
+		try {
+			h();
+		} catch (Exception e) {
+			print("Из main: printStackTrace:");
+			e.printStackTrace();
+		}
+
+	}
+
+}
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import java.util.logging.*;
+import java.io.*;
+
+public class Rethrowing extends Exception {
+	public static void f() throws Exception {
+		print("Создание исключения в f()");
+		throw new Exception("Возбуждено из f()");
+	}
+
+	public static void g() throws Exception {
+		try {
+			print("Вызов f() из g()");
+			f();
+		} catch (Exception e) {
+			print("из метода g(),e.printStackTrace():");
+			e.printStackTrace();
+			throw e;
+		}
+	}
+
+	public static void h() throws Exception {
+		try {
+			print("Вызов f() из h()");
+			f();
+		} catch (Exception e) {
+			print("из метода h(),e.printStackTrace():");
+			e.printStackTrace();
+			throw (Exception) e.fillInStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		try {
+			g();
+		} catch (Exception e) {
+			print("Из main: printStackTrace:");
+			e.printStackTrace();
+
+		}
+		try {
+			h();
+		} catch (Exception e) {
+			print("Из main: printStackTrace:");
+			e.printStackTrace();
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import java.util.logging.*;
+import java.io.*;
+import java.lang.reflect.Field;
+
+class DynamicFieldsException extends Exception {
+}
+
+public class DynamicFields {
+	Object[][] fields;
+
+	DynamicFields(int initialSize) {
+		fields = new Object[initialSize][2];
+		for (int i = 0; i < initialSize; i++) {
+			fields[i] = new Object[] { null, null };
+		}
+	}
+
+	public String toString() {// 1 строку изobj[0],obj[1]
+		StringBuilder result = new StringBuilder();
+		for (Object[] obj : fields) {
+			result.append(obj[0]);
+			result.append(": ");
+			result.append(obj[1]);
+			result.append("\n");
+
+		}
+		return result.toString();
+	}
+
+	private int hasField(String id) {// номер field о id
+		for (int i = 0; i < fields.length; i++)
+			if (id.equals(fields[i][0]))
+				return i;
+		return -1;
+	}
+
+	private int getFieldNumber(String id) throws NoSuchFieldException {// номер порядка по id
+		int fieldNum = hasField(id);
+		if (fieldNum == -1)
+			throw new NoSuchFieldException();
+		return fieldNum;
+	}
+
+	private int makeField(String id) {// добавить и заполнить null ,если [id]==null рисвоить id
+		for (int i = 0; i < fields.length; i++)
+			if (fields[i][0] == null) {
+				fields[i][0] = id;
+				return i;
+			}
+		// пуcтых полей нет ,добавить новое
+
+		Object[][] tmp = new Object[fields.length + 1][2];// добавить 1 новое поле и заполнить null
+		for (int i = 0; i < fields.length; i++)
+			tmp[i] = fields[i];
+		for (int i = fields.length; i < tmp.length; i++)
+			tmp[i] = new Object[] { null, null };
+		fields = tmp;
+
+		return makeField(id);
+	}
+
+	public Object getField(String id) throws NoSuchFieldException {
+		return fields[getFieldNumber(id)][1];// значение [1]
+	}
+
+	public Object setField(String id, Object value) throws DynamicFieldsException {
+		if (value == null) {
+			DynamicFieldsException dfe = new DynamicFieldsException();
+			dfe.initCause(new NullPointerException());// !
+			throw dfe;
+		}
+		int fieldNumber = hasField(id);
+		if (fieldNumber == -1)
+			fieldNumber = makeField(id);
+		Object result = null;
+		try {
+			result = getField(id);// получаем тсарое значение
+		} catch (NoSuchFieldException e) {
+			// используем конструктор с причиной
+			throw new RuntimeException(e);
+		}
+		fields[fieldNumber][1] = value;
+		return result;
+	}
+
+	public static void main(String[] args) {
+		DynamicFields df = new DynamicFields(3);
+		print(df);
+
+		try {
+			df.setField("d", "Значение d");
+			df.setField("number", 47);
+			df.setField("number2", 48);
+			print(df);
+
+			df.setField("d", "Новое значение d");
+			df.setField("number3", 11);
+			print("df:\n" + df);
+			print("df.getField(\"d\") : " + df.getField("d"));
+			Object field = df.setField("d", null);// исключение!
+			print(field);
+		} catch (NoSuchFieldException e) {
+			e.printStackTrace(System.out);
+		} catch (DynamicFieldsException e) {
+			e.printStackTrace(System.out);
+		}
+	}
+
+}
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import java.util.logging.*;
+import java.io.*;
+import java.lang.reflect.Field;
+
+class VeryImportantException extends Exception {
+	public String toString() {
+		return "A very important exception!";
+	}
+}
+
+class HoHumException extends Exception {
+	public String toString() {
+		return "A trivial exception";
+	}
+}
+
+public class DynamicFields {
+	void f() throws VeryImportantException {
+		throw new VeryImportantException();
+	}
+
+	void dispose() throws HoHumException {
+		throw new HoHumException();
+	}
+
+	public static void main(String[] args) {
+		try {
+			DynamicFields lmf = new DynamicFields();
+			try {
+				lmf.f();
+			} catch (Exception e) {
+				System.out.println(e);
+			} finally {
+				lmf.dispose();
+			}
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}\
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+
+
+
+
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+import java.util.logging.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Writer;
+
+class InputFile {
+	BufferedReader in;
+	// private Disposeable d0;
+	// private Disposeable d1;
+
+	InputFile(String fName) throws Exception {
+		try {
+			FileInputStream fis = new FileInputStream(fName);
+			in = new BufferedReader(new InputStreamReader(fis, "UTF-8"));
+			
+
+		} catch (FileNotFoundException e) {
+			print("Caught filenotfoundEx");
+			throw e;
+		} catch (Exception e) {
+			try {
+				in.close();
+
+			} catch (IOException e2) {
+				print("in.close failed");
+
+			}
+			throw e;
+		}
+	}
+
+	public void dispose() {
+		try {
+			in.close();
+			print("dispose() succesfull");
+
+		} catch (IOException e2) {
+			throw new RuntimeException("in.close failed");
+		}
+	}
+
+	public String getLine() {
+		String s;
+		try {
+			s = in.readLine();
+		} catch (IOException e) {
+			throw new RuntimeException("readline failed!");
+		}
+		return s;
+	}
+}
+
+class DynamicFields {
+	public static void main(String[] args) {
+		try {
+			InputFile in = new InputFile("C:\\Users\\ACER\\Desktop\\psina.txt");
+			try {
+				String s;
+				int i = 1;
+				while ((s = in.getLine()) != null) {
+					print(s);
+					i++;
+				}
+			} catch (Exception e) {
+				print("caught in main");
+			} finally {
+				in.dispose();// or here dispose
+			}
+		} catch (Exception e) {
+			print("construkto InputFile failed!");
+
+		}
+	}
+
+}
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+		String str = "подснежник", result = "";// 0 1 2 36
+		String str1 = "под", str2 = "ник";
+		char[] chMas = new char[] { 'с', 'н', 'е', 'ж' };
+
+		/*
+		 * char ch = 'а'; while (!(ch == 'я')) { print(ch + "(" + (int) ch + ")"); ch++;
+		 * } print(ch + "(" + (int) ch + ")");
+		 */
+
+		// print(str.charAt(3)); - index
+
+		// str.getChars(3, 7, chMas, 0); - копирование
+
+		// for (int i = 0; i < chMas.length; i++)
+		// result += chMas[i];
+		// print(result);
+
+		// chMas = str.toCharArray();
+		// print(chMas);
+
+		// print(str1.equalsIgnoreCase(str2));
+
+		// print(str1.compareTo(str2));
+
+		// str.contains(s); str1.contentEquals(sb)
+
+		// print(str.regionMatches(3, str1, 0, 4)); - состоит ли str из str1(0,4)
+		// СОВПАДАТЬ
+
+		// concat
+
+		// split-удаляет по рег. выражению
+
+		// substring
+
+		// replace
+
+		// print(str.startsWith(str1));
+
+		// print(str.endsWith(str2));
+
+		// print(str.indexOf('к'));
+		// print("маша".compareTo("миша"));
+
+		// print((Integer.parseInt(temp)));
+
+		// print("Илья".concat(" Вика"));
+
+		// print("пендосина".replace('а', 'ы'));
+
+		// intern,trim -фигня
+
+		//print(String.valueOf(97));
+
+	
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+StringBuilder bld = new StringBuilder("darow");
+		Formatter f = new Formatter(System.out);
+		String str = "подснежник";
+		int value = 0;
+		float val = 156.12345f;
+		printf("%-10.1f%s", val, str);
+		f.format("%-15s %10s %8s\n", "подснежник", "рокстар", "дерево");
+		f.format("%-15.10s %10s %8.3f\n", "сникерс", "15", 10.21481481);
+		f.format("%tT", Calendar.getInstance());
+
+		
+		  int value = 0; Formatter f = new Formatter(System.out); for (int i = 0; i <=
+		  128; i++) { f.format("%d=%X\n", i, value); value += 0x1;
+		  
+		  
+		  
+		  
+		  
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+	public static void main(String[] args) {
+		// /d-на сайте
+		// //d - в Jav'е
+		// /Q /E
+
+		String text = "";
+		Pattern pattern = Pattern.compile(".");
+
+		Matcher matcher = pattern.matcher(text);
+
+		while (matcher.find()) {
+			print(text.substring(matcher.start(), matcher.end()));// group
+		}
+	}
+
+	
+	]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+	
+	public static String knights = "Then, when you have found the shrubbery, you must "
+			+ "cut down the mightiest tree in the forest... " + "with... a herring!";
+
+	public static void main(String[] args) {
+		String text = "Airline are eight apples and one orange while Anita hadn't any";
+		Pattern pattern = Pattern.compile("(?i)((^[aeiou])|(\\s+[aeiou]))\\w+?[aeiou]\\b");
+
+		Matcher matcher = pattern.matcher(text);
+
+		while (matcher.find()) {
+			print(text.substring(matcher.start(), matcher.end()));
+		}
+	
+	
+	
+	
+	
+	
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+	public static String knights = "Then, when you have found the shrubbery, you must\n"
+			+ "cut down the mightiest tree in the forest...\n" +
+			"with... a herring!";
+	public static String POEM = "Twas brillig, and the slithy toves\nDid gyre and gimble in the wabe.\nAll mimsy were the borogoves.\nAnd the mome raths outgrabe.Beware the Jabberwock, my son,\nThe jaws that bite, the claws that catch,\nBeware the Jubjub bird, and shun\nThe frumious Bandersnatch. ";
+
+	public static String text = "Airline are eight apples and one orange while Anita hadn't any";
+
+	public static void main(String[] args) {
+		Pattern pattern = Pattern.compile("^.*$", Pattern.UNIX_LINES);
+
+		Matcher matcher = pattern.matcher(knights);
+
+		while (matcher.find()) {
+			print(knights.substring(matcher.start(), matcher.end()));
+		}
+
+		// print(knights);
+	}
+
+	
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+	public static String knights = "Then, when you have found the shrubbery, you must\n"
+			+ "cut down the mightiest tree in the forest...\n" + "with... a herring!";
+	public static String POEM = "Twas brillig, and the slithy toves\nDid gyre and gimble in the wabe.\nAll mimsy were the borogoves.\nAnd the mome raths outgrabe.Beware the Jabberwock, my son,\nThe jaws that bite, the claws that catch,\nBeware the Jubjub bird, and shun\nThe frumious Bandersnatch. ";
+
+	public static String text = "Airline are eight apples and one orange while Anita hadn't any";
+
+	public static String result = "/*! Here's a block of text to use as input to\n"
+			+ "the regular expression mather.Not that we'll\n" + "firt extract the block of text by looking for\n"
+			+ "the special delimiters,then process the\n" + "extracted block. !*/";
+
+	public static void main(String[] args) throws Exception {
+
+		/*
+		 * Pattern pattern = Pattern.compile("", Pattern.UNIX_LINES);
+		 * 
+		 * Matcher matcher = pattern.matcher();
+		 * 
+		 * while (matcher.find()) { print(.substring(matcher.start(), matcher.end())); }
+		 */
+
+		String fName = "C:\\Users\\ACER\\Desktop\\file.txt";// C:\Users\ACER\Desktop\file.txt
+		BufferedReader in = null;
+		// TextFile.read("input.txt");
+		try {
+			FileInputStream fis = new FileInputStream(fName);
+			in = new BufferedReader(new InputStreamReader(fis, "UTF-8"));
+			// some code
+			String line;
+			StringBuilder big = new StringBuilder();
+			while ((line = in.readLine()) != null) {
+				big.append(line);
+			}
+
+			Pattern pattern = Pattern.compile("/\\*!(.*)!\\*/", Pattern.DOTALL);
+
+			Matcher matcher = pattern.matcher(result);
+
+			while (matcher.find()) {
+				// print(text.substring(matcher.start(), matcher.end()));
+				result = matcher.group(1);
+				result = result.replaceAll(" {2,}", " ");
+				result = result.replaceAll("^ +", "");
+				result = result.replaceFirst("[aeiou]", "(VOWELL1)");
+			}
+			print(result + "\n");
+			StringBuffer sbuf = new StringBuffer();
+			Pattern p = Pattern.compile("[aeiou]");
+
+			Matcher m = p.matcher(result);
+			while (m.find()) {
+				m.appendReplacement(sbuf, m.group().toUpperCase());
+			}
+			m.appendTail(sbuf);
+			in.close();
+			print(sbuf);
+
+		} catch (FileNotFoundException e) {
+			print("Caught filenotfoundEx");
+
+		} catch (Exception e) {
+			try {
+				in.close();
+				print("закрыто не ссы");
+			} catch (IOException e2) {
+				print("close failed!");
+			}
+			throw e;
+		}
+
+	}
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+	public static void main(String[] args) {
+
+		if (args.length < 2) {
+			System.out.println("Usage: java JGrep file regex");
+			System.exit(0);
+		}
+		Pattern p = Pattern.compile(".*//.*$");//"(//\\s.+)|(/\\*\\s+.+)|(\\*\\s+.+)"
+		//.*/\\*.*\\*/|.*//.*$
+		int index = 0;
+		int j = 0;
+		List<String> list = new ArrayList<String>();
+		list = new TextFile(args[0]);
+		Matcher m = p.matcher("");
+		for (String line : list) {
+			m = p.matcher(list.get(j++));
+			//print(line);
+			m.reset(line);
+			while (m.find())
+				System.out.println(index++ + ": " + m.group() + ": " + m.start());
+		}
+
+	}
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+	public static BufferedReader input = new BufferedReader(new StringReader("Sir Robin Camelot\n22 1.617803"));
+
+	public static void main(String[] args) {
+		try {
+			print("What is your name?");
+			String name = input.readLine();
+			print(name);
+			//
+			print("How old are you?What is your faborite double?");
+			print("(input <age> <double>)");
+			String numbers = input.readLine();
+			print(numbers);
+			//
+			String[] numArray = numbers.split(" ");
+			int age = Integer.parseInt(numArray[0]);
+			double favorite = Double.parseDouble(numArray[1]);
+			//
+			System.out.format("Hi %s.\n", name);
+			System.out.format("In 5 years you will be %d.\n", age + 5);
+			System.out.format("My favorite double is %f", favorite / 2);
+		} catch (IOException e) {
+			System.err.println("I/O Exception");
+		}
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+
+import net.mindview.util.Print;
+
+import java.io.*;
+import java.math.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+public class DynamicFields {
+	public static BufferedReader input = new BufferedReader(new StringReader("Sir Robin Camelot\n22 1.617803"));//
+
+	public static void main(String[] args) {
+		Scanner stdin = new Scanner(DynamicFields.input);// !
+		print("What is yout name?");// SimpleRead.input)
+		String name = stdin.nextLine();
+		print(name);
+		//
+		print("How old are youWhat is yout favorite double?");
+		print("input : <age> <double>");
+		int age = Integer.parseInt(stdin.next());// эта залупчанская работает и без парсов
+		double favorite = Double.parseDouble(stdin.next());
+		//
+		System.out.format("Hi %s.\n", name);
+		System.out.format("In 5 years you will be %d.\n", age + 5);
+		System.out.format("My favorite double is %f", favorite / 2);
+
+	}
+}
+
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+
+import net.mindview.util.Print;
+
+import java.io.*;
+import java.math.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+class SimpleClass {
+	private int i;
+	private long l;
+	private float f;
+	private double d;
+	private String str;
+
+	SimpleClass(String general) {
+		Scanner input = new Scanner(general);
+		this.i = input.nextInt();
+		this.l = input.nextLong();
+		this.f = Float.parseFloat(input.next());// ставь запятую блять это пиздец а не Netbeans
+		this.d = Double.parseDouble(input.next());
+		this.str = input.nextLine();
+	}
+
+	public String toString() {
+		return "int: " + Integer.toString(this.i) + "\nlong:" + Long.toString(this.l) + "\nfloat:"
+				+ Float.toString(this.f) + "\ndouble:" + Double.toString(this.d) + "\nstr:" + this.str;
+	}
+
+}
+
+public class DynamicFields {
+
+	public static void main(String[] args) {
+		SimpleClass sc = new SimpleClass("123 8918 61414.14414 21144.1111 stroka");
+		print(sc);
+	}
+}
+
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import java.util.*;
+
+import net.mindview.util.Print;
+
+import java.io.*;
+import java.math.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+public class DynamicFields {
+	static String threatData = "58.27.82.161@02/10/2005\n" + "204.45.234.40@02/11/2005\n" + "58.27.82.161@02/11/2005\n"
+			+ "58.27.82.161@02/11/2005\n" + "58.27.82.161@02/12/2005\n"
+			+ "[Next log selection with different data format]";
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(threatData);
+		String pattern = "(\\d+[.]\\d+[.]\\d+[.]\\d+)@(\\d{2}/\\d{2}/\\d{4})";
+		while (scanner.hasNext(pattern)) {
+			scanner.next(pattern);
+			MatchResult match = scanner.match();
+			String ip = match.group(1);
+			String data = match.group(2);
+			System.out.format("Threat on %s from %s\n", data, ip);
+			
+		}
+
+	}
+}
+
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+
+
+String text = "try {\n" + 
+				"			InputFile in = new InputFile(\"C:\\\\Users\\\\ACER\\\\Desktop\\\\psina.txt\");\n" + 
+				"			try {\n" + 
+				"				String s;\n" + 
+				"				int i = 1;\n" + 
+				"				/*while ((s = in.getLine()) != null) {\n" + // /*
+				"					print(s);\n" + 
+				"					i++;\n" + 
+				"				}*/\n" +  // */
+				"			} catch (Exception e) {// comment1\n" + // //{1}
+				"				print(\"caught in main\");\n" + 
+				"			} finally {\n" + 
+				"				in.dispose();// or here dispose\n" +  // //{2}
+				"			}\n" + 
+				"		} catch (Exception e) {\n" + 
+				"// not neccecary print(\"construkto InputFile failed!\");\n" +// //{3}
+				"\n" + 
+				"		}\n" + 
+				"	}";
+		Pattern pattern = Pattern.compile("//\\s.+");
+		// //.* - однострочный,мб еще $
+		// /\\*.*\\*/ - не фурчит а должен!!!
+		// /\\* ->> /*
+		// \\* --> *
+		// ->> /
+		// \\s - пробел
+
+		Matcher matcher = pattern.matcher(text);
+
+		while (matcher.find()) {
+			print(text.substring(matcher.start(), matcher.end()));//print("group(0)");
+			print("darow");
+		}
+
+	}
+	
+	
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import net.mindview.util.Print;
+
+import java.util.*;
+import java.io.*;
+import java.math.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+interface HasBattetiers {
+};
+
+interface WaterProof {
+
+};
+
+interface Shoots {
+};
+
+class Toy {
+
+	Toy() {
+
+	}
+
+	Toy(int i) {
+
+	}
+}
+
+class FancyToy extends Toy implements HasBattetiers, WaterProof, Shoots {
+	FancyToy() {
+		super(1);
+	}
+
+}
+
+class TestInfo {
+	public static void printInfo(Class c) {
+		print(c.getName() + "");
+		print(c.getSimpleName() + "");
+		print(c.getCanonicalName() + "");
+
+	}
+}
+
+public class DynamicFields {
+
+	public static void main(String[] args) {
+		Class c = null;
+		try {
+			c = Class.forName("testProject.FancyToy");
+		} catch (ClassNotFoundException e) {
+			print("Не удалось найти класс FancyToy");
+			System.exit(1);
+		}
+		for (Class face : c.getInterfaces())
+			TestInfo.printInfo(face);
+		Class up = c.getSuperclass();// FancyToy наслуедуется от Toy
+		Object obj = null;
+		print("\n");
+		try {
+			obj = up.newInstance();// для конструктора по умолчанию
+		} catch (InstantiationException e) {
+			print("Не удалось создать экземпляр!");
+			System.exit(1);
+		} catch (IllegalAccessException e) {
+			print("Отказано в доуступе!");
+			System.exit(1);
+		}
+		TestInfo.printInfo(c);
+	}
+
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+
+package testProject;
+
+import static net.mindview.util.Print.*;
+
+import net.mindview.util.Print;
+
+import java.util.*;
+import java.io.*;
+import java.math.*;
+import java.util.regex.*;
+import net.mindview.util.*;
+
+interface HasBattetiers {
+};
+
+interface WaterProof {
+
+};
+
+interface Shoots {
+};
+
+class Toy {
+
+	Toy() {
+
+	}
+
+	Toy(int i) {
+
+	}
+}
+
+abstract class Shapes {
+	public void draw() {
+		print(this + " draw()!");
+	}
+
+	public abstract String toString();
+
+}
+
+class Circle extends Shapes {
+	public String toString() {
+		return "Circle";
+	}
+}
+
+class Rhomboid extends Shapes {
+	public String toString() {
+		return "Rhomboid";
+	}
+}
+
+class FancyToy extends Toy implements HasBattetiers, WaterProof, Shoots {
+	FancyToy() {
+		super(1);
+	}
+
+}
+
+class TestInfo {
+	public static void printInfo(Class c) {
+		print(c.getName() + "");
+		print(c.getSimpleName() + "");
+		print(c.getCanonicalName() + "");
+
+	}
+}
+
+public class DynamicFields {
+
+	public static void main(String[] args) {
+		Class c = null;
+		try {
+			c = Class.forName("testProject.FancyToy");
+		} catch (ClassNotFoundException e) {
+			print("Не удалось найти класс FancyToy");
+			System.exit(1);
+		}
+		for (Class face : c.getInterfaces())
+			TestInfo.printInfo(face);
+		Class up = c.getSuperclass();// FancyToy наслуедуется от Toy
+		Object obj = null;
+
+		try {
+			obj = up.newInstance();// для конструктора по умолчанию
+		} catch (InstantiationException e) {
+			print("Не удалось создать экземпляр!");
+			System.exit(1);
+		} catch (IllegalAccessException e) {
+			print("Отказано в доуступе!");
+			System.exit(1);
+		}
+		TestInfo.printInfo(c);// FancyToy
+		print("\n");
+		// upcasting:
+		List<Shapes> list = Arrays.asList(new Circle(), new Rhomboid());
+
+		// dawncasting back!
+		for (Shapes shape : list)
+			shape.draw();
+		Rhomboid rhomboid = new Rhomboid();
+		// upcast:
+		Shapes shape = (Shapes) rhomboid;
+		// check type before downcast:
+		if (shape instanceof Circle) {
+			print("(Share)rhomboid is a Circle");
+			((Circle) shape).draw();
+		} else if (!(shape instanceof Circle))
+			print("(Share)rhomboid is not a Circle");
+		// rhomboid.getClass().isInstance(rhomboid);
+		// !List<Shapes> list = new ArrayList<Shapes>(new Circle(), new Rhomboid());
+	}
+
+}
+
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
